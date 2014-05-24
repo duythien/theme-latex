@@ -1,0 +1,44 @@
+\contentsline {chapter}{List of Figures}{iv}{dummy.2}
+\contentsline {chapter}{List of Tables}{v}{dummy.4}
+\contentsline {chapter}{Abbreviations}{vi}{dummy.6}
+\contentsline {chapter}{Physical Constants}{vii}{dummy.9}
+\contentsline {chapter}{Symbols}{viii}{dummy.12}
+\vspace {2em}
+\contentsline {chapter}{\numberline {1}L\IeC {\`\ohorn }i M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{1}{chapter.15}
+\contentsline {chapter}{\numberline {2}C\IeC {\'a}c kh\IeC {\'a}i Ni\IeC {\d \ecircumflex }m C\IeC {\ohorn } B\IeC {\h a}n}{2}{chapter.16}
+\contentsline {section}{\numberline {2.1}T\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c spin-orbit trong tinh th\IeC {\h \ecircumflex } ch\IeC {\'\acircumflex }t r\IeC {\'\abreve }n}{3}{section.18}
+\contentsline {section}{\numberline {2.2}T\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c trao \IeC {\dj }\IeC {\h \ocircumflex }i}{4}{section.21}
+\contentsline {section}{\numberline {2.3}T\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c hyperfine v\IeC {\'\ohorn }i spin c\IeC {\h u}a h\IeC {\d a}t nh\IeC {\^a}n}{5}{section.22}
+\contentsline {section}{\numberline {2.4}L\IeC {\'y} thuy\IeC {\'\ecircumflex }t nh\IeC {\'o}m trong v\IeC {\d \acircumflex }t l\IeC {\'y}}{5}{section.23}
+\contentsline {subsection}{\numberline {2.4.1}\IeC {\DJ }\IeC {\d i}nh ngh\IeC {\~\i }a nh\IeC {\'o}m}{5}{subsection.24}
+\contentsline {subsection}{\numberline {2.4.2}Nh\IeC {\'o}m \IeC {\dj }i\IeC {\h \ecircumflex }m}{5}{subsection.25}
+\contentsline {section}{\numberline {2.5}Ph\IeC {\'e}p quay trong c\IeC {\ohorn } h\IeC {\d o}c l\IeC {\uhorn }\IeC {\d \ohorn }ng t\IeC {\h \uhorn }}{7}{section.36}
+\contentsline {section}{\numberline {2.6}L\IeC {\'y} thuy\IeC {\'\ecircumflex }t nhi\IeC {\~\ecircumflex }u lo\IeC {\d a}n gi\IeC {\h a} suy bi\IeC {\'\ecircumflex }n}{10}{section.50}
+\contentsline {section}{\numberline {2.7}G\IeC {\`\acircumflex }n \IeC {\dj }\IeC {\'u}ng Hatree-Fock}{13}{section.66}
+\contentsline {chapter}{\numberline {3}\bfseries L\IeC {\'y} Thuy\IeC {\'\ecircumflex }t C\IeC {\'\acircumflex }u Tr\IeC {\'u}c V\IeC {\`u}ng N\IeC {\u a}ng L\IeC {\uhorn }\IeC {\d \ohorn }ng C\IeC {\h u}a \IeC {\DJ }i\IeC {\d \ecircumflex }n T\IeC {\h \uhorn } Trong B\IeC {\'a}n D\IeC {\~\acircumflex }n}{15}{chapter.73}
+\contentsline {section}{\numberline {3.1}\IeC {\DJ }\IeC {\d i}nh l\IeC {\'y} Bloch}{15}{section.74}
+\contentsline {section}{\numberline {3.2}Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p kp}{17}{section.91}
+\contentsline {section}{\numberline {3.3}M\IeC {\^o} h\IeC {\`\i }nh kp 2 v\IeC {\`u}ng,kp 4 v\IeC {\`u}ng}{20}{section.115}
+\contentsline {subsection}{\numberline {3.3.1}M\IeC {\^o} h\IeC {\`\i }nh kp 2 v\IeC {\`u}ng}{20}{subsection.116}
+\contentsline {subsection}{\numberline {3.3.2}M\IeC {\^o} h\IeC {\`\i }nh kp 4 v\IeC {\`u}ng}{21}{subsection.125}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Ph\IeC {\^a}n t\IeC {\'\i }ch h\IeC {\`a}m s\IeC {\'o}ng c\IeC {\ohorn } s\IeC {\h \ohorn } v\IeC {\`a} th\IeC {\`a}nh ph\IeC {\d \acircumflex }n ma tr\IeC {\d \acircumflex }n Hamiltonian}{22}{subsubsection.134}
+\contentsline {subsubsection}{\numberline {3.3.2.2}T\IeC {\'o}m t\IeC {\'\abreve }t k\IeC {\'\ecircumflex }t qu\IeC {\h a} m\IeC {\^o} h\IeC {\`\i }nh kp 4 v\IeC {\`u}ng nh\IeC {\uhorn } sau:}{26}{subsubsection.155}
+\contentsline {chapter}{\numberline {4}\bfseries M\IeC {\^o} H\IeC {\`\i }nh Kane M\IeC {\h \ohorn } R\IeC {\d \ocircumflex }ng v\IeC {\`a} L\IeC {\'y} Thuy\IeC {\'\ecircumflex }t Nhi\IeC {\~\ecircumflex }u Lo\IeC {\d a}n $\mathbf {L\mathaccentV {ddot}07F{o}wdin}$}{28}{chapter.158}
+\contentsline {section}{\numberline {4.1}M\IeC {\^o} h\IeC {\`\i }nh Kane M\IeC {\h \ohorn } r\IeC {\d \ocircumflex }ng}{29}{section.165}
+\contentsline {section}{\numberline {4.2}Ph\IeC {\^a}n t\IeC {\'\i }ch c\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n Hamiltonian}{32}{section.168}
+\contentsline {section}{\numberline {4.3}Bi\IeC {\'\ecircumflex }n \IeC {\dj }\IeC {\h \ocircumflex }i t\IeC {\d o}a \IeC {\dj }\IeC {\d \ocircumflex }}{34}{section.172}
+\contentsline {section}{\numberline {4.4}L\IeC {\'y} thuy\IeC {\'\ecircumflex }t nhi\IeC {\~\ecircumflex }u lo\IeC {\d a}n gi\IeC {\h a} suy bi\IeC {\'\ecircumflex }n L$\mathaccentV {ddot}07F{o}$wdin}{37}{section.177}
+\contentsline {section}{\numberline {4.5}T\IeC {\'\i }nh to\IeC {\'a}n s\IeC {\'\ocircumflex }}{45}{section.207}
+\contentsline {chapter}{\numberline {5}\bfseries Gi\IeC {\'\ecircumflex }ng L\IeC {\uhorn }\IeC {\d \ohorn }ng T\IeC {\h \uhorn }}{48}{chapter.213}
+\contentsline {section}{\numberline {5.1}\IeC {\'\UHORN }ng d\IeC {\d u}ng c\IeC {\h u}a gi\IeC {\'\ecircumflex }ng l\IeC {\uhorn }\IeC {\d \ohorn }ng t\IeC {\h \uhorn }}{49}{section.222}
+\contentsline {section}{\numberline {5.2}D\IeC {\`o}ng spin v\IeC {\`a} d\IeC {\`o}ng \IeC {\dj }i\IeC {\d \ecircumflex }n t\IeC {\'\i }ch}{53}{section.238}
+\contentsline {chapter}{\numberline {6}K\IeC {\'\ecircumflex }t Lu\IeC {\d \acircumflex }n- H\IeC {\uhorn }\IeC {\'\ohorn }ng Ph\IeC {\'a}t Tri\IeC {\h \ecircumflex }n \IeC {\DJ }\IeC {\`\ecircumflex } T\IeC {\`a}i}{55}{chapter.247}
+\contentsline {section}{\numberline {6.1}K\IeC {\'\ecircumflex }t Lu\IeC {\d \acircumflex }n}{55}{section.248}
+\contentsline {section}{\numberline {6.2}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{55}{section.249}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}L\IeC {\'y} Thuy\IeC {\'\ecircumflex }t Orbit Ph\IeC {\^a}n T\IeC {\h \uhorn }}{56}{appendix.250}
+\contentsline {section}{\numberline {A.1}C\IeC {\ohorn } s\IeC {\h \ohorn } v\IeC {\`a} ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{56}{section.251}
+\contentsline {section}{\numberline {A.2}T\IeC {\h \ocircumflex } h\IeC {\d \ohorn }p tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh hai AO}{57}{section.257}
+\contentsline {section}{\numberline {A.3}S\IeC {\d \uhorn } h\IeC {\'\acircumflex }p th\IeC {\d u} c\IeC {\h u}a c\IeC {\d \abreve }p \IeC {\dj }i\IeC {\d \ecircumflex }n t\IeC {\h \uhorn } v\IeC {\`a} l\IeC {\h \ocircumflex } tr\IeC {\'\ocircumflex }ng t\IeC {\d \uhorn } do}{59}{section.274}
+\vspace {2em}
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{61}{dummy.285}

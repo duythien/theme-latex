@@ -1,0 +1,238 @@
+\chapter{POLARITON}
+\label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\section{Phương pháp K.p}
+Mục tiêu của phương pháp K.p là giải phương trình Schrodinger để tiềm năng lượng và hàm sóng của điện tử trong tinh thể chất rắn, phương trình Schrondinger điện tử trong tinh thể chất rắn có dạng sau(đối với 1 điện tử):
+\begin{equation}
+\left[\frac{p^2}{2m_0}+V_0(\mathbf{r})+H_{SO}\right]\psi_{m\mathbf{k}}(\mathbf{r}) = E_{mk}\psi_{m\mathbf{k}}(\mathbf{r})
+\end{equation}
+ở đây:$m_0$ là khối lượng hiệu dụng của điện tử tụ do,$V_0$ thế dao dộng tuần hoàn,$m$ ở đây ta xem nó như dãy dẫn và
+$H_{SO}$ Hamition tương tác spin-orbirt(quỹ đạo)
+\begin{equation}
+H_{SO} = \frac{\hbar}{4m^2_0}\boldsymbol{\sigma} \cdot \left(\boldsymbol{\nabla} V_0\times \boldsymbol{p} \right) =  \frac{\hbar}{4m^2_0}\left(\boldsymbol{\sigma}\times \boldsymbol{\nabla}V_0\right)\cdot\boldsymbol{p}
+\end{equation}
+trong đó $\boldsymbol{\sigma}$ là vecto ma trận Pauli, và hàm sóng điện tử trong tinh thể thỏa mản định lý Bloch
+\begin{equation}
+\psi_{m\mathbf{k}}(r) = e^{i\mathbf{kr}}u_{m\mathbf{k}}(\mathbf{r})
+\end{equation}
+với $u_{m\mathbf{k}}(\mathbf{r})$ là hàm tuần hoàn theo chu kỳ tinh thể,và hàm Bloch có tính chất sau đây
+\begin{align}
+\langle\psi_{m\mathbf{k}}|\psi_{m'\mathbf{k}'}\rangle &\equiv \int d\mathcal{V}\psi_{m\mathbf{k}}^*(\mathbf{r})\psi_{m'\mathbf{k}'}(\mathbf{r}) = \delta_{mm'}\delta\left(\boldsymbol{k-k'}\right) \\
+\langle u_{m\mathbf{k}}| u_{m'\mathbf{k}'}\rangle &\equiv \int d\Omega u_{m\mathbf{k}}^* u_{m'\mathbf{k}'} = \delta_{mm'}\frac{\Omega}{\left(2\pi \right)^3}
+\end{align}
+ở đây $V\left(\Omega\right)$ là thể tích chuẩn hóa của tinh thể(unit-cell) \\
+vì
+\begin{align}
+ \left(-i\hbar \nabla \right)e^{i\mathbf{kr}}u_{m\mathbf{k}}(\mathbf{r}) &=\hbar \boldsymbol{k}e^{i\mathbf{kr}}u_{m\mathbf{k}}(\mathbf{r})+e^{i\mathbf{kr}}
+ \left(-i\hbar\nabla \right)u_{m\mathbf{k}}(\mathbf{r}) \\
+\left(-i\hbar \nabla \right)^2 e^{i\mathbf{kr}}u_{m\mathbf{k}}(\mathbf{r}) &={\hbar}^2\boldsymbol{k}^2  e^{i\mathbf{kr}}u_{m\mathbf{k}}(\mathbf{r})+2\hbar\boldsymbol{k}e^{i\mathbf{kr}}\left(-i\hbar\nabla\right)u_{m\mathbf{k}}(\mathbf{r})+e^{i\mathbf{kr}}{\left(-i\hbar\nabla\right)}^2 u_{m\mathbf{k}}(\mathbf{r})
+\end{align}
+thây $(1.2),(1.3)$ vào $(1.1)$ và sử dụng biểu thức $(1.6),(1.7)$ ta viết lại phương trình Schrodinger $(1.1)$ như sau:\\
+\begin{equation}
+\left[\frac{p^2}{2m_0}+V_0(\mathbf{r})+\frac{{\hbar}^2k^2}{2m_0}+\frac{\hbar}{m_0}\boldsymbol{k}\left(\boldsymbol{p}+\frac{\hbar}{4m^2_0}\boldsymbol{\sigma}\times\boldsymbol{\nabla} V_0 \right)+\frac{\hbar}{4m^2_0}\boldsymbol{\sigma}\left(\boldsymbol{\nabla} V_0\times \boldsymbol{p} \right)\right]u_{m\mathbf{k}}(\mathbf{r}) = E_{m\mathbf{k}}u_{m\mathbf{k}}(\mathbf{r})
+\end{equation}
+đặt
+\[H_{kp} = \frac{\hbar}{m_0}\boldsymbol{k}\cdot\boldsymbol{\pi},\boldsymbol{\pi} = \boldsymbol{p}+\frac{\hbar}{4m^2_0}\boldsymbol{\sigma}\times\boldsymbol{\nabla} V_0 ,
+\xi_{m\mathbf{k}} = E_{m\mathbf{k}}-\frac{{\hbar}^2\boldsymbol{k}^2}{2m_0}\]
+ta viết lại phương trình trên lại như sau:\\
+\begin{equation}
+\left(H+H_{kp}\right)u_{m\mathbf{k}}=\xi_{m\mathbf{k}}u_{m\mathbf{k}}
+\end{equation}
+phương trình $(1.9)$ dduocj gọi là phương trình $\boldsymbol{Kp}$
+Để mô tả tương tác vật chất - ánh sáng người ta dùng hình thức luận polariton. Polariton được xem xét ở đây là trạng thái trộn exciton - photon, thu được từ sự chéo hóa Hamiltonian toàn phần có chứa trong tương tác exciton - polariton. Khái niệm polariton được đưa ra đầu tiên bởi Hopfield \cite{21} trong bán dẫn khối. Tuy nhiên, trong khối do không có cấu trúc thế bẫy đối với bất kỳ hạt tải nào, cho nên một photon sau khi được phát xạ bởi một exciton sẽ thoát ra mẫu và trường phân cực tương ứng với các quá trình quang chuyển trong điều kiện này là không đáng kể. Trong trạng thái trộn, do vậy, không có sự khác biệt lớn với các trạng thái tinh khiết và rất khó quan sát bằng thực nghiệm. Để khắc phục khuyết điểm này của hệ bán dẫn khối nhưng vẫn giữ lại được sự tương tự về mặt lý thuyết của nó, người ta đặt một giếng lượng tử bên trong một hộp cộng hưởng Fabry-Perot (microcavity). Trong một cấu trúc như thế, các photon sau khi được phát xạ bởi một exciton vẫn bị giam trong hộp cộng hưởng và bị hấp thụ trở lại rồi lại phát xạ và mang trong nó các đặc tính của exciton$ \ldots$Cứ như thế trường thu được trong hộp cộng hưởng càng ngày càng lệch khỏi các trường tinh khiết đủ để có thể nhận biết được trong thực nghiệm như là trường của trạng thái trộn exciton - polariton và giả hạt của nó được gọi là microcavity polariton.traan duy thieen
+
+\section{Tán sắc của polariton}
+Hamiltonian tương tác với các hạt tải tự do (điện tử và lổ trống) với trường ánh sáng được định nghĩa dưới dạng
+  \begin{equation}
+   H_I=-\int{d^3r\psi^{\dagger}(r)[e r]\xi(r,t)\psi(r)}
+  \end{equation}   
+  Trong đó $ \psi^{\dagger}$và $ \psi(r)$ là toán tử trường của các hạt tải tự do. Khai triển $\left(1.1\right)$ theo cơ sở các hàm Bloch có dạng
+  \begin{equation}
+  \psi(r)=\sum_{\lambda,k}a_{\lambda,k}\phi_\lambda(r,k)
+  \end{equation}
+  \begin{equation}
+  \psi^{\dagger}(r)=\sum_{\lambda,k}a_{\lambda,k}^{\dagger}\phi_{\lambda}^{\dagger}(r,k)
+  \end{equation}
+Các hàm Bloch $(1.2), (1.3)$ được viết trong gần đúng các hàm bao (envelope function) dưới dạng
+  \begin{equation}
+   \phi_{\lambda}(r,k_{\mid\mid})=\xi_\lambda(z)\frac{e^{i k_{\mid\mid} r_{\mid\mid} }}{\sqrt{S}}\omega_\lambda(r,k_{\mid\mid})
+  \end{equation}    
+  \begin{equation}
+   \phi_{\lambda}^*(r,k_{\mid\mid})=\xi_{\lambda}^*(z)\frac{e^{i k_{\mid\mid} r_{\mid\mid} }}{\sqrt{S}}\omega_{\lambda}^*(r,k_{\mid\mid})
+  \end{equation}   
+  Trong đó $ \omega_\lambda(r,k)$ và $ \omega_{\lambda}^*(r,k)$ là các hàm Bloch ba chiều.
+  Hamiltonian $(1.1)$ được viết lại như sau
+  \begin{equation}
+   H_I=-\int{d^3r\psi^{\dagger}(r)[e r]\xi(r,t)\psi(r)}
+  \end{equation}
+Biến đổi Fourier $2D$ của điện trường có dạng
+  \begin{equation}
+   \xi(r,t)=\sum_{q_{\mid\mid}}\xi(z,q_{\mid\mid},t)e^{iq_{\mid\mid}r_{\mid\mid}}
+  \end{equation}
+Thay các phương trình $(1.2), (1.3), (1.7)$ vào $(1.6)$ ta thu được
+   \begin{eqnarray}
+      H_I&=& - \sum_{k_{\mid\mid},k_{\mid\mid}',q_{\mid\mid}}\sum_{\lambda,\lambda'}a_{k_{\mid\mid},\lambda}^{\dagger}a_{k_{\mid\mid}',\lambda'}\frac{1}{S}\int{d^3r}\xi_{\lambda}^*(z)\xi_{\lambda'}(z)e^{i(k_{\mid\mid}'+q_{\mid\mid}-k_{\mid\mid})r_{\mid\mid}}\nonumber\\
+      &\times& \omega_\lambda^{\dagger}(0,r)e r \omega_{\lambda'}(0,r)E(q_{\mid\mid},z,t)
+   \end{eqnarray}
+Tách tích phân trong biểu thức $(1.8)$ thành tổng theo tất cả các ô đơn vị với giả sử rằng
+  \begin{itemize}
+   \item Các hàm $\xi_{\lambda}(z)$ xem như hằng số trên mỗi ô đơn vị.
+   \item Sự thay đổi của $E(r,t)$ trên mỗi ô đơn vị là không đáng kể.
+   \item Tích phân trên mỗi ô đơn vị là như nhau trong toàn tinh thể.
+  \end{itemize}
+   \begin{eqnarray}
+   H_I&=&-\sum_{k_{\mid\mid},k_{\mid\mid}',q_{\mid\mid}}\sum_{\lambda,\lambda'}a_{k_{\mid\mid},\lambda}^{\dagger}a_{k_{\mid\mid}',\lambda'}\sum_{i=1}^N\frac{e^{i(k_{\mid\mid}'+q_{\mid\mid}-k_{\mid\mid})r_{\mid\mid}^L}}{S}\nonumber\\
+      &\times&\xi_{\lambda}^*(z)\xi_{\lambda'}(z)E(q_{\mid\mid},z,t)\int{d^3r^\mu\omega_{\lambda}^*(0,r^\mu)e(r^\mu+r^L)\omega_{\lambda'}(0,r^\mu)}\nonumber\\
+      &\times&e^{i(k_{\mid\mid}'+q_{\mid\mid}-k_{\mid\mid})r_{\mid\mid}^\mu}
+   \end{eqnarray}
+Thay biến $ r\rightarrow r^\mu+ r^L $, trong đó $r^\mu$ và $r^L$ lần lượt là vector tọa độ trong mỗi ô đơn vị và vector tọa độ của các nút mạng trong tinh thể.\\
+Trong trường hợp tinh thể có kích thước lớn ta đã chuyển 
+   \begin{equation*}
+     \sum_{i=1}^N\ldots\rightarrow\frac{1}{l^3}\int{d^3r\ldots}
+   \end{equation*}
+   \begin{eqnarray}
+      H_I&=&-\sum_{k_{\mid\mid},k_{\mid\mid}',q_{\mid\mid}}\sum_{\lambda,\lambda'}a_{k_{\mid\mid},\lambda}^{\dagger}a_{k_{\mid\mid}',\lambda'}\int{dz^Ld^2r_{\mid\mid}^L\frac{e^{i(k_{\mid\mid}'+q_{\mid\mid}-k_{\mid\mid})r_{\mid\mid}^L}}{S}}\nonumber\\
+      &\times&\xi_{\lambda}^*(z)\xi_{\lambda'}(z)E(q_{\mid\mid},z,t)\frac{1}{l^3}\int{d^3r^\mu\omega_{\lambda}^*(0,r^\mu)er^\mu\omega_{\lambda'}(0,r^\mu)}\nonumber\\
+      &\times&e^{i(k_{\mid\mid}'+q_{\mid\mid}-k_{\mid\mid})r_{\mid\mid}^\mu}
+   \end{eqnarray}
+Sử dụng định nghĩa của hàm Delta Dirac
+   \begin{equation}
+    \delta_{k_{\mid\mid},k'_{\mid\mid}}=\frac{1}{S}\int{d^2r_{\mid\mid}e^{i(k-k')r_{\mid\mid}}}
+   \end{equation}
+ta thu được Hamiltonian toàn phần $H_I$
+   \begin{eqnarray}
+      H_I&=&-\sum_{k_{\mid\mid},k_{\mid\mid}',q_{\mid\mid}}\sum_{\lambda,\lambda'}a_{k_{\mid\mid},\lambda}^{\dagger}a_{k_{\mid\mid}',\lambda'}\int{dz\xi_{\lambda}^*(z)\xi_{\lambda'}(z)E(q_{\mid\mid},z,t)}\nonumber\\
+      &\times&\frac{1}{l^3}\int{d^3r^\mu\omega_{\lambda}^*(0,r^\mu)\omega_{\lambda'}(0,r^\mu)}\nonumber\\
+      &\times&\delta_{k_{\mid\mid},k_{\mid\mid}'+q_{\mid\mid}}
+  \end{eqnarray}   
+Bằng cách sử dụng dạng tường minh
+  \begin{equation} 
+   d_{\lambda,\lambda'}=\frac{1}{l^3}\int{d^3r^\mu\omega_{\lambda}^*(0,r^\mu)er^\mu\omega_{\lambda'}(0,r^\mu)}
+   n(z)=\xi_{\lambda}^*(z)\xi_{\lambda'}(z)
+  \end{equation}
+và sử dụng $ \xi(z,q_{\mid\mid},t)$ trong biểu thức \footnote{Biểu diễn lượng tử hóa thứ cấp của điện trường trong cavity sẽ có dạng\\ $\varepsilon(q_{\mid\mid},z,t)=\frac{1}{\sqrt{S}}\sum_{q_z}i\sqrt{2\pi\hbar\omega_q} \Big( b_{q_z,q_{\mid\mid}}\chi_{q_z,q_{\mid\mid}}(z)-b_{q_z,-q_{\mid\mid}}^\dagger\chi_{q_z,-q_{\mid\mid}}^*(z) \Big)$}
+. Hamiltonian được viết lại dưới dạng sau
+  \begin{eqnarray}
+   H_I&=&-i \sum_{k_{\mid\mid},q_{\mid\mid},q_z}\sum_{\lambda,{\lambda'}}\int{dz\eta(z)\frac{d_{\lambda,{\lambda'}}\sqrt{2\pi\hbar\omega_q}}{\sqrt{S}}}\nonumber\\
+      &\times& a_{k_{\mid\mid},\lambda}^\dagger a_{k_{\mid\mid}-q_{\mid\mid},{\lambda'}}\Big (b_{{q_z},q_{\mid\mid}}\chi_{q_z,q_{\mid\mid}}(z)+b_{{q_z},-q_{\mid\mid}}^\dagger \chi_{q_z,-q_{\mid\mid}}(z) \Big)
+  \end{eqnarray}
+Trong gần đúng hai dãy ta có
+  \begin{eqnarray}
+   H_I&=&-i \sum_{k_{\mid\mid},q_{\mid\mid},q_z} \int {dz \eta(z) \chi_{q_{\mid\mid},q_z}(z) \frac{d_{c,v} \sqrt{2\pi\hbar\omega_q}}{\sqrt{S}} }\nonumber\\
+      &\times& (a_{c,k_{\mid\mid}}^\dagger a_{v,k_{\mid\mid}-q_{\mid\mid}}+ a_{}v,k_{\mid\mid}-q_{\mid\mid}a_{c,k_{\mid\mid}} ) (b_{q_z,q_{\mid\mid}}-b_{q_z,-q_{\mid\mid}} )
+  \end{eqnarray}
+Để biểu diễn Hamiltonian tương tác $(1.15)$ theo các toán tử sinh, hủy của Exciton $2D$ $ B_\nu^\dagger, k_{\mid\mid}$ và $ B_{\nu,k_{\mid\mid}}$ ta làm tương tự với trường hợp khối sẽ thu được
+  \begin{eqnarray}
+   H_I&=&-\sum_{\nu,q_z,q_{\mid\mid}}i\hbar g_\nu(q_{\mid\mid},q_z)(B_{\nu,q_{\mid\mid}}^\dagger+B_{\nu,-q_{\mid\mid}} ) (b_{q_z,q_{\mid\mid}}-b_{q_z,-q_{\mid\mid}}^\dagger)
+  \end{eqnarray}
+Trong đó 
+  \begin{equation}
+   \hbar g_\nu(q_{\mid\mid},q_z)=d_{c\nu}\Psi_\nu^{2D}(r_{\mid\mid}=0)\sqrt{2\pi\omega_q}U(q_{\mid\mid},q_z)
+  \end{equation}
+với 
+  \begin{equation}
+   U(q_{\mid\mid},q_z)=\int dz\eta(z)\chi_{q_{\mid\mid},q_z}(z)
+  \end{equation}
+Một cách gần đúng chỉ xét tới trạng thái thấp nhất của exciton $2D$ và photon microcavity ta có
+ \begin{eqnarray}
+   H_I&=&-\sum_{q_{\mid\mid}}i\hbar g(q_{\mid\mid})(B_{\nu,q_{\mid\mid}}^\dagger+B_{\nu,-q_{\mid\mid}} ) (b_{q_z,q_{\mid\mid}}-b_{q_z,-q_{\mid\mid}}^\dagger)
+  \end{eqnarray}
+Trong đó 
+  \begin{equation}
+   \hbar g(q_{\mid\mid})=d_{c\nu}\Psi^{2D}(r_{\mid\mid}=0)\sqrt{2\pi\omega_{c,q}}U(q_{\mid\mid})
+  \end{equation}
+Hamiltonian tự do của exciton $2D$
+  \begin{equation}
+   H_{ex}=\sum_{q_{\mid\mid}}\hbar\omega_{x,q_{\mid\mid}}B_{q_{\mid\mid}}^\dagger B_{q_{\mid\mid}}
+  \end{equation}
+Hamiltonian của phooton microcavity
+  \begin{equation}
+   H_{ph}=\sum_{q_{\mid\mid}}\hbar\omega_{c,q_{\mid\mid}}b_{q_{\mid\mid}}^\dagger b_{q_{\mid\mid}}
+  \end{equation}
+Với
+  \begin{equation}
+     \omega_{x,q_{\mid\mid}}=\omega_0^x+\frac{\hbar k^2}{2M}
+  \end{equation}
+Ở đây $ \omega_{c,q_{\mid\mid}}$ lần lượt là tần số của exciton 2D và photon microcavity trong trạng thái cơ bản, và chú ý rằng $ \hbar\omega_0^x=E_0^{2D}$ được cho bởi phương trình \footnote{Với hướng nhiều chiều bất kỳ ta có $\omega_{c,k}=\frac{c}{\sqrt{\varepsilon_0}}\sqrt{k_z^2+k_{q_{\mid\mid}^2}}=\frac{c}{\sqrt{\varepsilon_0}}\sqrt{\frac{\pi^2}{L_c^2}+k_{\mid\mid}^2}\equiv\omega_{c,k_{\mid\mid}}$}. 
+Khi bỏ qua các số hạng không cộng hưởng của Hamiltonian tương tác $(1.19)$ ta thu được Hamiltonian toàn phần của hệ 2D dưới dạng
+  \begin{equation}
+   H_{tot}=\hbar\sum_q \Big[ \omega_{x,q_{\mid\mid}}B_{q_{\mid\mid}}^\dagger B_{q_{\mid\mid}}+\omega_{c,q_{\mid\mid}}b_{q_{\mid\mid}}^\dagger b_{q_{\mid\mid}}+ig_{q_{\mid\mid}}(B_{q_{\mid\mid}}^\dagger b_{q_{\mid\mid}})-B_{q_{\mid\mid}} b_{q_{\mid\mid}}^\dagger \Big]
+  \end{equation}
+Để chéo hóa Hamiltonian $(1.24)$ về dạng
+  \begin{equation}
+   H=\sum_{q_{\mid\mid}}\hbar\Omega_{q_{\mid\mid}}P_{q_{\mid\mid}}^\dagger P_{q_{\mid\mid}}
+  \end{equation}
+Trong đó toán tử $ P_{q_{\mid\mid}}$ được định nghĩa dưới dạng tổ hợp tuyến tính của các toán tử exciton và photon như sau
+  \begin{equation}
+   P_{q_{\mid\mid}}=x_{q_{\mid\mid}}B_{q_{\mid\mid}}+c_{q_{\mid\mid}}b_{q_{\mid\mid}}
+  \end{equation}
+Trong đó các hệ số $ x_{q_{\mid\mid}}$ và $ c_{q_{\mid\mid}}$ được xác định để đảm bảo toán tử $ P_{q_{\mid\mid}}$ thỏa hệ thức giao hoán
+  \begin{equation}
+  \Big[ P_{q_{\mid\mid}}^\dagger,P_{q_{\mid\mid}} \Big]={\mid x_{q_{\mid\mid}}\mid}^2+{\mid c_{q_{\mid\mid}}\mid}^2=1
+  \end{equation}
+Ta thu được bài toán trị riêng
+  \begin{equation}
+  \Big[ P_{q_{\mid\mid}}, H_{tot} \Big]= \Big[ P_{q_{\mid\mid}}, H \big]=\sum_{q_{\mid\mid}}\hbar\Omega_{q_{\mid\mid}}P_{q_{\mid\mid}}
+  \end{equation}
+Bài toán này sẽ dẫn tới tán sắc của của polariton trong micro cavity $ \Omega_{q_{\mid\mid}}$
+  \begin{equation}
+  \Omega_{q_{\mid\mid},\pm}=\frac{1}{2}(\omega_{x,q_{\mid\mid}}+\omega_{c,q_{\mid\mid}})\pm\frac{1}{2}\sqrt{(\omega_{x,q_{\mid\mid}}-\omega_{c,q_{\mid\mid}})+4g^2}
+  \end{equation}
+tương ứng với các hệ số Hopfield $ x_{q_{\mid\mid}}$ và $ c_{q_{\mid\mid}}$
+  \begin{equation}
+   x_{q_{\mid\mid},j}=\sqrt{\frac {\Omega_{q_{\mid\mid},j}-\omega_{c,q_{\mid\mid}}} {2\Omega_{q_{\mid\mid},j}-\omega_{c,q_{\mid\mid}}-\omega_{x,q_{\mid\mid}}} }
+  \end{equation}
+  \begin{equation}
+   ic_{q_{\mid\mid},j}=\sqrt{\frac {\Omega_{q_{\mid\mid},j}-\omega_{x,q_{\mid\mid}}} {2\Omega_{q_{\mid\mid},j}-\omega_{c,q_{\mid\mid}}-\omega_{x,q_{\mid\mid}}} }
+  \end{equation}
+Trong đó '+' chỉ nhánh trên và '-' chỉ nhánh dưới, và $ j= +, -$. Chuẩn hạt tự do ứng với phổ năng lượng $ \Omega_{q_{\mid\mid},\pm}$ được gọi là microcavity polariton.
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\section{Hamiltonian toàn phần}
+Hamiltonian toàn phần của polariton tương tác với phonon âm và các polariton khác được biết một cách rộng rãi dưới dạng
+  \begin{eqnarray}
+    H&=&\sum_k\omega_k a_k^{\dagger}a_k + \sum_q\omega_q b_q^{\dagger}b_q \nonumber\\
+     &+&\sum_{k,q}G(k,q) a_k^{\dagger}a_{k-q}(b_q+b_{-q}^{\dagger})\nonumber\\
+     &+&\sum_{k,k',q}V_{k+q,k}^{k'-q,k'}a_{k+q}^\dagger a_{k'-q}^\dagger a_{k'}a_k
+  \end{eqnarray}
+\newpage
+Trong đó: 
+  \begin{itemize}
+    \item $ \sum_k\omega_k a_k^{\dagger}a_k,\sum_q\omega_q b_q^{\dagger}b_q$ là hai số hạng mô tả năng lượng tự do của polariton và phonon.
+    \item $ \sum_{k,q}G(k,q) a_k^{\dagger}a_{k-q}(b_q+b_{-q}^{\dagger})$ là số hạng mô tả năng lượng tương tác giữa polariton với phonon âm
+    \item $ \sum{k,k',q}V(k+q,k'-q,k',k)a_{k+q}^\dagger a_{k'-q}^\dagger a_k'a_k$ là số hạng mô tả năng lượng tương tác giữa các polariton với nhau thông qua liên kết Coulomb.
+    \item $G(k,q)$ là thừa số liên kết của polariton với phonon.
+    \item $V_{k+q,k}^{k'-q,k'}$ là thừa số liên kết giữa các polariton với nhau. 
+  \end{itemize}
+Biểu thức tường minh cho $G(k,q)$ và $V_{k+q,k}^{k'-q,k'}$ cho bởi các dạng sau
+   \begin {eqnarray*}
+     G(k,q)&=&i\sqrt{\frac{\hbar q}{2\rho V \mu}}\nonumber\\
+           &\times&\frac{8\pi^2}{q_zL_z(4\pi^2-q_z^2L_z^2)}\sin(\frac{q_zL_z}{2})\nonumber\\
+	   &\times&\Big\{a_e \big[ 1+(\frac{b_h}{2}) \big]^{-3/2}+a_h \big[ 1+(\frac{b_e}{2}) \big]^{-3/2}\Big\}\nonumber\\
+           &\times&x_k^*x_{k-q}
+   \end{eqnarray*}
+Trong đó
+    \begin{equation*}
+      b_e(h)=\frac{m_e(h)}{m_e+m_h}qa_b
+    \end{equation*}
+Với
+ 	\begin{itemize}
+	 \item $m_e(h),a_e(h)$ là khối lượng hiệu dụng, thế biến dạng tinh thể đối với điện tử (lổ trống).
+	 \item $ a_b$ là bán kính Bohr của exciton trong 2 chiều.
+	 \item $ V, L_z$ là thể tích, bề dày của giếng lương tử.
+	 \item $ \rho,\mu$ là khối lượng riêng và vận tốc truyền âm đối với chất nền của giếng lượng tử. 
+	 \item $ x_k$ là trọng số exciton mô tả tỉ lệ trộn của exciton trong trạng thái polariton tương ứng.
+	\end{itemize}
+Một cách gần đúng, tương tác Coulomb của các polariton với nhau trong giới hạn số sóng nhỏ $k,k',q << a_b^{-1}$ được viết dưới dạng
+	\begin{equation*}
+	 V_{k+q,k}^{k'-q,k'}=\frac{1}{4S}6E_ba_b^2x_{k+q}^*x_{k'-q}^*x_{k'}x_k
+	\end{equation*}
+Trong đó $E_b$ là năng lượng liên kết của exciton trong quantum well, $S$ là diện tích bề mặt của quantum well.
+Xét trong tương tác polariton - polariton thì Hamiltonian toàn phần được viết lại như sau
+	\begin{equation}
+	H=\sum_k\omega_k a_k^{\dagger}a_k + \sum_{k,k',q}V_{k+q,k}^{k'-q,k'}a_{k+q}^\dagger a_{k'-q}^\dagger a_{k'}a_k
+	\end{equation}
+ 
+
+
+\newpage

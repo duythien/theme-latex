@@ -1,0 +1,245 @@
+\documentclass[13pt, a4paper, oneside]{Thesis} % Paper size, default font size and one-sided paper
+\graphicspath{{./Pictures/}} % Specifies the directory where pictures are stored
+\usepackage[square, numbers, comma, sort&compress]{natbib}
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle} % Defines t1he thesis title - don't touch this
+\usepackage[utf8]{vietnam}
+\usepackage{ucs}
+\usepackage[grey,utopia]{quotchap}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{tikz}
+%\pdfcryptsetup{owner=duythien,user=duythien}
+\usepackage{relsize} %lam ky tu toan hoc small,big xem 5.24
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\textsc{\LARGE ĐẠI HỌC QUỐC GIA TP.HỒ CHÍ MINH }\\ % Name of your university/college
+\textsc{\LARGE TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN }\\[1.5cm] % Name of your university/college
+\textsc{\Large Khoa Vật Lý-Vật Lý Kỹ Thuật}\\[0.5cm] % Major heading such as course name
+\textsc{\large Chuyên Ngành vật Lý Lý Thuyết}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Tính Toán Cấu Trúc Vùng Năng Lượng Bằng Phương Pháp Kp và Ứng Dụng}\\[0.4cm] % Title of your document
+
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Sinh Viên:}\\
+Trần Duy Thiện% Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Thầy Hướng Dẫn:} \\
+Ph.D Huỳnh Thanh Đức % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[8cm]
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+%----------------------------------------------------------------------------------------
+\vfill % Fill the rest of the page with whitespace
+\end{titlepage}
+\clearpage % Start a new page
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\fontsize{22pt}{19.5pt} \selectfont
+\textbf{LỜI CẢM ƠN}
+\end{center}
+\fontsize{13pt}{19.5pt} \selectfont
+
+Tôi xin bày tỏ lòng biết ơn chân thành và sâu sắc đến Thầy Huỳnh Thanh Đức, người đã tận tình hướng dẫn và tạo điều kiện thuận lợi cho tôi hoàn thành luận văn này.
+
+Tôi xin chân thành cảm ơn Thầy Đoàn Trí Dũng đã chỉ dẫn cho tôi thêm nhiều kiến thức trong suốt thời gian tôi thực hiện luận văn tại phòng Vật lý lý thuyết và toàn thể thầy cô, Viện Vật lý Tp. Hồ Chí Minh$\dots$
+
+Tôi xin cảm ơn các Thầy Vũ Quang Tuyên và các thầy cô thuộc Bộ môn Vật lý-Vật lý lý thuyết của Trường Khoa học Tự nhiên đã cho tôi những kiến thức nền tản để làm luận văn này
+
+Cảm ơn những người bạn của tôi, đã quan tâm và giúp để tôi, cảm ơn Tiến và anh Quan khóa 07 đã giúp để tôi
+
+Cuối cùng, tôi xin gởi lời cảm ơn đến Cha, Mẹ và gia đình, những người luôn động viên, ủng hộ tôi trong suốt quá trình học tập.
+
+\begin{center}
+\hspace{8.cm} \vspace{1. cm}HCM, 2013\\
+\hspace{8.cm}\textbf{Trần Duy Thiện}
+\end{center}
+\thispagestyle{empty}
+\clearpage % Start a new page
+
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+%\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+%\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+%\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+%\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+{
+\textbf{RPA} & \textbf{R}andom phase approximation \\
+%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\HH &lỗ trống nặng\\
+\textbf{LH} &\textbf{L}ỗ trống nhẹ\\
+\textbf{SO} & \textbf{T}ương tác spin quỹ đạo\\
+\textbf{MQW} & \textbf{N}hiều lớp màng mỏng nano phủ lên nhau\\
+\textbf{IQE} & \textbf{H}iệu xuất lượng tử nội bộ \\
+\textbf{CB} &\textbf{V}ùng dẫn\\
+\textbf{VB} &\textbf{V}ùng hóa trị\\
+}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+%\begin{tiny}
+%\end{tiny}
+\clearpage % Start a new page
+
+%\lhead{\emph{Physical}} % Set the left side page header to "Physical Constants"
+
+\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+{
+Vận tốc ánh sáng trong chân không & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$\\
+Hằng số Planck & $\hbar$ & $=$ & $6.626\ 068\ 057\times10^{-34}\ \mbox{J.s}$\\
+Bán kính Borh &$a_0$ &$=$ &$0.529A^{0}=0.529\times 10^{-10}$\\
+Điện tich điện tử &$-e$ &$=$&$-1.6\times10^{-19}C$\\
+% Constant Name & Symbol & = & Constant Value (with units) \\
+}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+%s\lhead{\emph{Symbols}} % Set the left side page header to "Symbols"
+
+\listofnomenclature{lll} % Include a list of Symbols (a three column table)
+{
+$m_0$ & khối lượng của điện tử tự do\\
+$m*$ &khối lượng hiệu dụng của đien tu \\
+$n$ &chỉ số đặc trưng của dãy năng lượng bao gồm cả chỉ số spin\\
+$\Gamma$ &biểu diễn bất khả quy\\
+$\sigma$ & chỉ số spin, và ma trận P\\
+$\Psi$ &hàm sóng trong không gian 3 chiều\\
+$[A,B]=AB-BA$ &giao hoán tử\\
+$r=(x,y,z)$ &vị trí của vecto\\
+$E$ &năng lượng\\
+${A,B}=\frac{1}{2}(AB+BA)$ &tích trực tiếp của đối xứng\\
+$\mathfrak{D}$ &toán tử phép quay Euler\\
+$\mathbf{P},p$ &Xung lượng\\
+$\mathbf{A}$ &Thế véctơ\\
+$\delta(x)$ &Hàm delta Dirac\\
+$\delta_{mn}$ &Ký hiệu Kronecker\\
+$\mathbf{A}\times\mathbf{B}$ hoặc $[\mathbf{A}\mathbf{B}]$ &Tích véctơ\\
+% Symbol & Name & Unit \\
+
+& & \\ % Gap to separate the Roman symbols from the Greek
+
+$\omega$ & angular frequency & rads$^{-1}$ \\
+% Symbol & Name & Unit \\
+}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\setstretch{1.3} % Return the line spacing back to 1.3
+
+\pagestyle{empty} % Page style needs to be empty for this page
+
+%\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+%
+%\begin{savequote}[8cm]
+%  ``All changes, even the most longed for, have their melancholy;
+%  for what we leave behind us is a part of ourselves; we must
+%  die to one life before we can enter another.''
+%  \qauthor{Anatole France}
+%  `The moment a man starts to behave ridiculous to a woman
+%  you know he is serious at it.Ž
+%  \qauthor{Colette}
+%\end{savequote}
+\makeatletter
+\input{./Chapters/Chapter0}
+\input{./Chapters/Chapter1}
+\input{./Chapters/Chapter2}
+\input{./Chapters/Chapter3}
+\input{./Chapters/Chapter4}
+\input{./Chapters/Chapter5}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{./Appendices/AppendixA}
+
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\input{./Chapters/refer}
+\end{document}  

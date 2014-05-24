@@ -1,0 +1,997 @@
+
+\chapter{Lý Thuyết Orbit Phân Tử} % Main appendix title
+\label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
+\lhead{Appendix A. \emph{Phụ lục}} % This is for the header on each page - perhaps a shortened title
+
+ \section{Cơ sở và phương pháp}
+ Ba nhà khoa học Hund-Mulliken-Lennard Jones là những người đặt nền tảng cho phương pháp orbit phân tử bằng cách mở rộng khái niệm orbit nguyên tử(hệ một hạt nhân nguyên tử) cho phân tử (hệ nhiều hạt nguyên tử)
+ \begin{enumerate}
+ \item Nếu trong nguyên tử, mỗi electron được miêu tả bằng một hàm sóng(orbit nguyên tử ta ký hiệu AO), thì trong phân tử, mỗi electron cũng được miêu tả  bằng một hàm sóng $\boldsymbol{\Psi}$(orbit phân tử ta ký hiệu MO), và xác xuất tìm thầy elecron trong một thể tích $\boldsymbol{dv}$ của phân tử là $\boldsymbol{\psi}^2 dv$ tương tự như trong nguyên tử
+ \item Nếu trong mỗi orbit nguyên tử, electron được đặc trưng bằng một bộ số lượng tử:$\emph{n,l,m,s}$ và ta có AO với các tên $\emph{s,p,d,f...}$ thì trong mỗi orbit phân tử, electron cũng được đặt trưng bằng một số các bộ lượng tử  và ta có MO với các tên $\sigma, \pi, \delta,\phi$
+ \item Nếu mỗi orbit nguyên tử ứng với một mức năng lượng xác đinh, thì mỗi orbit phân tử cũng tương ứng với một mức năng lượng xác định
+ \item Việc điền electron vào AO tuân theo nguyên lý vững bền, nguyên lý Pauli quy tắc Hund, thì việc điền electron vào MO cũng phải tuân theo những quy tắc đó
+ \item Từ các AO của các nguyên tử tham gia vào việc tạo thành các liên kết, người ta có thể suy ra MO của phân tử mới tạo thành bằng cách tổ hợp tuyến tính các AO ban đầu: n AO tổ hợp tuyến tính cho n MO và các AO được sử dụng phải thỏa mản các điều kiện sau:
+ \begin{itemize}
+ \item[1/] Có năng lượng gần bằng nhau
+ \item[2/] Có mức độ xen phủ rõ rệt
+ \item[3/] Có tính đối xứng giống nhau đối với trục nối tâm hai nguyên tử
+ \end{itemize}
+\end{enumerate}  
+\section{Tổ hợp tuyến tính hai AO}
+Ta khảo tổ hợp tuyến tính hai AO $\psi_a$ và $\psi_b$ của hai nguyên tử Hidro a và b trong ion-phân tử hidro $H^+_2$. Khi electron ở gần hạt nhân ta coi trường lực tác dụng vào electron chỉ là của hạt nhân a và trạng thái nó được mô tả bằng hàm sóng orbit:
+\begin{equation}
+\psi_a=\frac{1}{\sqrt{\pi}}e^{-r_a}
+\end{equation}
+Ngược lại khi electron ở gần hạt nhân nguyên tử b, trạng thái của nó được mô tả bằng hàm sóng orbit nguyên tử:
+\begin{equation}
+\psi_b=\frac{1}{\sqrt{\pi}}e^{-r_b}
+\end{equation}
+Tổ hợp tuyến tính của 2 hàm sóng trên lại với nhau và ta gọi nó làm sóng mô tả trạng thái electron của orbit phân tử(LCAO):
+\begin{equation}
+\psi_{MO}=c_a\psi_a + c_b\psi_b
+\end{equation}
+vì hai hàm sóng AO là đồng nhất với nhau nên chúng tham gia vào MO vói cùng đóng góp với nhau:
+\begin{equation}
+c^2_a=c^2_b \rightarrow c_a=\pm c_b
+\end{equation}
+như vậy vói hai phân tử $H^+_2$ ta có hai MO
+\begin{equation}
+ \psi_+ = c_+\left(\psi_a + \psi_b \right)  \qquad \psi_{\_}=c_{\_}\left(\psi_a -\psi_b\right)
+\end{equation}
+với $c_+$ và $c_\_$ là các thứa số chung ứng với tổ hợp cộng và tổ hợp trừ 
+\begin{enumerate}
+\item Ta có thể xác định $c_+$ và $c_\_$ từ điều kiện chuẩn hóa hàm sóng, với hàm sóng $\psi_+$:
+\begin{equation}
+1=\int_{\infty}\psi_+^2 dv=\int_{\infty}c_+^2\left(\psi_a +\psi_b\right)^2 dv=
+c_+^2 \left[ \int_{\infty}\psi_a^2dv +  \int_{\infty}\psi_b^2dv + 2\int_{\infty}\psi_a \psi_b dv\right]
+\end{equation}
+các orbit của hàm $\psi_a$ và $\psi_b$ là chuẩn hóa tức $\int_{\infty}\psi_b^2dv=\int_{\infty}\psi_b^2dv=1$ và ta ký hiệu đại lượng S bằng tích phân $\int_{\infty}\psi_a \psi_bdv$ được gọi là tích phân phủ thây vào ta có
+\begin{equation}
+c_+ = \frac{1}{\sqrt{2(1+S)}} \qquad \text{vì S<<1 nên } 1+S\approx 1, \text{do đó} \qquad c_+=\frac{1}{\sqrt{2}}
+\end{equation}
+kết quả cuối cùng ta có
+\begin{equation}
+\psi_+=\frac{1}{\sqrt{2}}\left(\psi_a +\psi_b\right) \qquad ; \psi_{\_}=\frac{1}{\sqrt{2}}\left(\psi_a -\psi_b\right)
+\end{equation}
+\textbf{Ý nghĩa của các hàm MO}
+Hình A.2 là đồ thị của hàm orbit phân tử $\psi_+$  và hàm $\psi_{\_}$ so với đồ thị của hàm orbit nguyên tử $\psi_a$ và $\psi_b$, trong đó a và b là hai hạt nhân nguyên tử của Hidoro
+mặt khác, mật độ electron được xác định bởi giá trị $\psi^2$, ta có
+\begin{equation}
+\psi_+^2=\psi_a^2 +\psi_b^2 +2\psi_a \psi_b ;\qquad \psi_\_^2=\psi_a^2 +\psi_b^2 - 2\psi_a \psi_b
+\end{equation}
+ta tạm bỏ qua các hệ số $c_\_$ và $c_+$, đối với hàm sóng $\psi_+$ do có thêm số hạng $+2\psi_+\psi_\_$ nên ở khoảng cách giửa 2 hạt nhân nguyên tử có sự tăng mật độ electron có tác dụng liên kết hai hạt nhân thành phân tử
+Đối với hàm sóng $\psi_\_$ do có thêm số hạng $-2\psi_+\psi_\_$ nên khoãng cách giữa hai hạt nhân nguyên tử có sự giảm mật độ eletron có tác dụng làm yếu liên kết giữa hai hạt nhân
+\item Ta tính năng lượng của hàm sóng $\psi_+$ và $\psi_\_$, từ phương trình Schr$\ddot{o}$dinger $H\Psi=E\Psi$ ta nhân 2 vế với hàm sóng $\Psi$ và lấy tích phân toàn không gian ta có:
+\begin{equation}
+ \int\Psi H \Psi dv =E\int \Psi^2 dv=E \qquad \text{vì hám sóng đã chuẩn hóa}
+\end{equation}
+\begin{itemize}
+\item[•] Xét trường hợp $\Psi =\psi_+ \rightarrow E_+=\alpha + \beta$ với:\\
+\begin{equation}
+\alpha =\int\Psi_a H \Psi_a dv =\int\Psi_b H \Psi_b \qquad  \left(\alpha \text{ được gọi là tích phân Coulomb}\right)
+\end{equation}
+\begin{equation}
+\alpha =\int\Psi_a H \Psi_b dv =\int\Psi_b H \Psi_a\qquad  \left(\beta\text{ được gọi là tích phân trao đổi}\right)
+\end{equation}
+\item[•] Xét trường hợp tương tự ta có $\Psi =\psi_\_ \rightarrow E_\_=\alpha - \beta$
+\end{itemize}
+tích phân Coulomb $\alpha$ là năng lượng electron ở orbit $\psi_a$ hoặc $\psi_b$, nó bằng năng lượng của nguyên tử hiđro ở trạng thái cơ bản , còn tích phân trao đổi $\beta$ là năng lượng tương tác giữa orbit $\psi_a$ và $\psi_b$; nó có giá trị âm nên $E_\_ < \alpha < E_+$. Khi electron từ nguyên tử chuyển về MO $\psi_+$, hệ thống trở nên bền vứng , khi electron từ nguyên tử chuyển về MO $\psi_\_$ hệ thống trở nên kém bền hơn, vì lý do đó mà  $\psi_+$ gọi là MO \emph{liên kết} ,còn $\psi_\_$ được gọi là MO \emph{phản liên kết}
+\end{enumerate}
+% Graphic for TeX using PGF
+% Title: /home/opensuse/digram/xacxuat.dia
+% Creator: Dia v0.97.2
+% CreationDate: Thu Jun  6 02:57:17 2013
+% For: opensuse
+% \usepackage{tikz}
+% The following commands are not supported in PSTricks at present
+% We define them conditionally, so when they are implemented,
+% this pgf file will use them.
+\begin{figure}[hc]
+\centering
+\ifx\du\undefined
+  \newlength{\du}
+\fi
+\setlength{\du}{15\unitlength}
+\begin{tikzpicture}[scale=0.7]
+\pgftransformxscale{1.000000}
+\pgftransformyscale{-1.000000}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\definecolor{dialinecolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{dialinecolor}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (13.750000\du,8.200000\du){};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (30.750000\du,13.950000\du)--(49.800000\du,14.100000\du);
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (7.000000\du,14.100000\du)--(27.700000\du,14.200000\du);
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (13.350000\du,13.850000\du)--(13.450000\du,14.000000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (13.350000\du,13.850000\du)--(13.450000\du,14.000000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{13.345994\du}{14.069338\du}}{\pgfpoint{13.172650\du}{14.034669\du}}{\pgfpoint{13.103312\du}{13.930662\du}}
+\pgfpathcurveto{\pgfpoint{13.033975\du}{13.826656\du}}{\pgfpoint{13.068644\du}{13.653312\du}}{\pgfpoint{13.172650\du}{13.583975\du}}
+\pgfpathcurveto{\pgfpoint{13.276656\du}{13.514637\du}}{\pgfpoint{13.450000\du}{13.549306\du}}{\pgfpoint{13.519338\du}{13.653312\du}}
+\pgfpathcurveto{\pgfpoint{13.588675\du}{13.757319\du}}{\pgfpoint{13.554006\du}{13.930662\du}}{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{13.345994\du}{14.069338\du}}{\pgfpoint{13.172650\du}{14.034669\du}}{\pgfpoint{13.103312\du}{13.930662\du}}
+\pgfpathcurveto{\pgfpoint{13.033975\du}{13.826656\du}}{\pgfpoint{13.068644\du}{13.653312\du}}{\pgfpoint{13.172650\du}{13.583975\du}}
+\pgfpathcurveto{\pgfpoint{13.276656\du}{13.514637\du}}{\pgfpoint{13.450000\du}{13.549306\du}}{\pgfpoint{13.519338\du}{13.653312\du}}
+\pgfpathcurveto{\pgfpoint{13.588675\du}{13.757319\du}}{\pgfpoint{13.554006\du}{13.930662\du}}{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (20.750000\du,14.000000\du)--(20.550000\du,14.000000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (20.750000\du,14.000000\du)--(20.550000\du,14.000000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{20.550000\du}{13.875000\du}}{\pgfpoint{20.675000\du}{13.750000\du}}{\pgfpoint{20.800000\du}{13.750000\du}}
+\pgfpathcurveto{\pgfpoint{20.925000\du}{13.750000\du}}{\pgfpoint{21.050000\du}{13.875000\du}}{\pgfpoint{21.050000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{21.050000\du}{14.125000\du}}{\pgfpoint{20.925000\du}{14.250000\du}}{\pgfpoint{20.800000\du}{14.250000\du}}
+\pgfpathcurveto{\pgfpoint{20.675000\du}{14.250000\du}}{\pgfpoint{20.550000\du}{14.125000\du}}{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{20.550000\du}{13.875000\du}}{\pgfpoint{20.675000\du}{13.750000\du}}{\pgfpoint{20.800000\du}{13.750000\du}}
+\pgfpathcurveto{\pgfpoint{20.925000\du}{13.750000\du}}{\pgfpoint{21.050000\du}{13.875000\du}}{\pgfpoint{21.050000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{21.050000\du}{14.125000\du}}{\pgfpoint{20.925000\du}{14.250000\du}}{\pgfpoint{20.800000\du}{14.250000\du}}
+\pgfpathcurveto{\pgfpoint{20.675000\du}{14.250000\du}}{\pgfpoint{20.550000\du}{14.125000\du}}{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{1.000000\du}{1.000000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.750000\du}{8.550000\du}}
+\pgfpathcurveto{\pgfpoint{35.450000\du}{10.700000\du}}{\pgfpoint{38.806000\du}{13.900000\du}}{\pgfpoint{40.300000\du}{13.900000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{30.950000\du}{13.800000\du}}
+\pgfpathcurveto{\pgfpoint{32.493800\du}{13.800000\du}}{\pgfpoint{36.050000\du}{9.300000\du}}{\pgfpoint{35.600000\du}{8.550000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (35.350000\du,13.950000\du)--(35.700000\du,14.050000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (35.350000\du,13.950000\du)--(35.700000\du,14.050000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfpathcurveto{\pgfpoint{35.665660\du}{14.170190\du}}{\pgfpoint{35.511129\du}{14.256041\du}}{\pgfpoint{35.390939\du}{14.221701\du}}
+\pgfpathcurveto{\pgfpoint{35.270748\du}{14.187361\du}}{\pgfpoint{35.184898\du}{14.032830\du}}{\pgfpoint{35.219238\du}{13.912639\du}}
+\pgfpathcurveto{\pgfpoint{35.253578\du}{13.792449\du}}{\pgfpoint{35.408109\du}{13.706599\du}}{\pgfpoint{35.528299\du}{13.740939\du}}
+\pgfpathcurveto{\pgfpoint{35.648490\du}{13.775279\du}}{\pgfpoint{35.734340\du}{13.929810\du}}{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfpathcurveto{\pgfpoint{35.665660\du}{14.170190\du}}{\pgfpoint{35.511129\du}{14.256041\du}}{\pgfpoint{35.390939\du}{14.221701\du}}
+\pgfpathcurveto{\pgfpoint{35.270748\du}{14.187361\du}}{\pgfpoint{35.184898\du}{14.032830\du}}{\pgfpoint{35.219238\du}{13.912639\du}}
+\pgfpathcurveto{\pgfpoint{35.253578\du}{13.792449\du}}{\pgfpoint{35.408109\du}{13.706599\du}}{\pgfpoint{35.528299\du}{13.740939\du}}
+\pgfpathcurveto{\pgfpoint{35.648490\du}{13.775279\du}}{\pgfpoint{35.734340\du}{13.929810\du}}{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (43.400000\du,14.100000\du)--(42.850000\du,14.150000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (43.400000\du,14.100000\du)--(42.850000\du,14.150000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{42.850000\du}{14.150000\du}}
+\pgfpathcurveto{\pgfpoint{42.838683\du}{14.025513\du}}{\pgfpoint{42.951853\du}{13.889710\du}}{\pgfpoint{43.076339\du}{13.878393\du}}
+\pgfpathcurveto{\pgfpoint{43.200826\du}{13.867076\du}}{\pgfpoint{43.336630\du}{13.980245\du}}{\pgfpoint{43.347947\du}{14.104732\du}}
+\pgfpathcurveto{\pgfpoint{43.359264\du}{14.229219\du}}{\pgfpoint{43.246094\du}{14.365022\du}}{\pgfpoint{43.121607\du}{14.376339\du}}
+\pgfpathcurveto{\pgfpoint{42.997121\du}{14.387656\du}}{\pgfpoint{42.861317\du}{14.274487\du}}{\pgfpoint{42.850000\du}{14.150000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{42.850000\du}{14.150000\du}}
+\pgfpathcurveto{\pgfpoint{42.838683\du}{14.025513\du}}{\pgfpoint{42.951853\du}{13.889710\du}}{\pgfpoint{43.076339\du}{13.878393\du}}
+\pgfpathcurveto{\pgfpoint{43.200826\du}{13.867076\du}}{\pgfpoint{43.336630\du}{13.980245\du}}{\pgfpoint{43.347947\du}{14.104732\du}}
+\pgfpathcurveto{\pgfpoint{43.359264\du}{14.229219\du}}{\pgfpoint{43.246094\du}{14.365022\du}}{\pgfpoint{43.121607\du}{14.376339\du}}
+\pgfpathcurveto{\pgfpoint{42.997121\du}{14.387656\du}}{\pgfpoint{42.861317\du}{14.274487\du}}{\pgfpoint{42.850000\du}{14.150000\du}}
+\pgfusepath{stroke}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (35.500000\du,12.300000\du){$\psi_a$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (38.500000\du,9.250000\du){$|\psi_{\_}|^2$};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{1.000000\du}{1.000000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{8.150000\du}{13.850000\du}}
+\pgfpathcurveto{\pgfpoint{9.859800\du}{13.850000\du}}{\pgfpoint{12.950000\du}{10.850000\du}}{\pgfpoint{13.300000\du}{8.500000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.300000\du}{8.450000\du}}
+\pgfpathcurveto{\pgfpoint{13.700000\du}{10.750000\du}}{\pgfpoint{16.706800\du}{13.750000\du}}{\pgfpoint{18.400000\du}{13.750000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{16.100000\du}{13.750000\du}}
+\pgfpathcurveto{\pgfpoint{17.511000\du}{13.750000\du}}{\pgfpoint{19.850000\du}{10.350000\du}}{\pgfpoint{20.350000\du}{8.650000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.450000\du}{8.750000\du}}
+\pgfpathcurveto{\pgfpoint{20.700000\du}{12.050000\du}}{\pgfpoint{24.291000\du}{14.000000\du}}{\pgfpoint{26.200000\du}{14.000000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.249817\du}{8.049768\du}}
+\pgfpatharc{142}{39}{4.624806\du and 4.624806\du}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.300000\du}{8.000000\du}}
+\pgfpathcurveto{\pgfpoint{12.650000\du}{9.550000\du}}{\pgfpoint{10.250000\du}{14.300000\du}}{\pgfpoint{7.250000\du}{13.950000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.500000\du}{8.050000\du}}
+\pgfpathcurveto{\pgfpoint{22.550000\du}{13.700000\du}}{\pgfpoint{24.474600\du}{13.950000\du}}{\pgfpoint{26.450000\du}{13.950000\du}}
+\pgfusepath{stroke}
+}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (16.500000\du,8.200000\du){$|\psi_+|^2$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (12.900000\du,10.300000\du){};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (12.700000\du,12.000000\du){$\psi_a$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (19.700000\du,12.150000\du){$\psi_b$};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.650000\du}{8.350000\du}}
+\pgfpathcurveto{\pgfpoint{39.900000\du}{17.000000\du}}{\pgfpoint{40.000000\du}{15.000000\du}}{\pgfpoint{42.950000\du}{8.400000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{42.950000\du}{8.400000\du}}
+\pgfpathcurveto{\pgfpoint{43.200000\du}{9.950000\du}}{\pgfpoint{40.111000\du}{14.050000\du}}{\pgfpoint{38.700000\du}{14.050000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{42.950000\du}{8.250000\du}}
+\pgfpathcurveto{\pgfpoint{43.350000\du}{11.650000\du}}{\pgfpoint{46.223200\du}{14.000000\du}}{\pgfpoint{47.850000\du}{14.000000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.650000\du}{8.400000\du}}
+\pgfpathcurveto{\pgfpoint{35.050000\du}{9.800000\du}}{\pgfpoint{32.510400\du}{13.850000\du}}{\pgfpoint{30.950000\du}{13.850000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{43.050000\du}{8.300000\du}}
+\pgfpathcurveto{\pgfpoint{42.850000\du}{13.200000\du}}{\pgfpoint{47.006000\du}{13.950000\du}}{\pgfpoint{48.500000\du}{13.950000\du}}
+\pgfusepath{stroke}
+}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (42.550000\du,12.400000\du){$\psi_b$};
+\end{tikzpicture}
+\caption[xác xuất hàm sóng]{Đồ thị mô tả tổng hợp xác xuất hai hàm sóng nguyên tử, bonding $|\psi_{+}|^2$,và anti-bonding $|\psi_{\_}|^2$}
+\label{fig:xác xuất hàm sóng}
+\end{figure}
+
+% Graphic for TeX using PGF
+% Title: /home/opensuse/digram/mocual.dia
+% Creator: Dia v0.97.2
+% CreationDate: Thu Jun  6 03:07:55 2013
+% For: opensuse
+% \usepackage{tikz}
+% The following commands are not supported in PSTricks at present
+% We define them conditionally, so when they are implemented,
+% this pgf file will use them.
+\begin{figure}[hc]
+\centering
+\ifx\du\undefined
+  \newlength{\du}
+\fi
+\setlength{\du}{15\unitlength}
+\begin{tikzpicture}[scale=0.7]
+\pgftransformxscale{1.000000}
+\pgftransformyscale{-1.000000}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\definecolor{dialinecolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{dialinecolor}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (13.750000\du,8.200000\du){};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (30.750000\du,13.950000\du)--(49.450000\du,14.150000\du);
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (7.000000\du,14.100000\du)--(27.700000\du,14.200000\du);
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (13.350000\du,13.850000\du)--(13.450000\du,14.000000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (13.350000\du,13.850000\du)--(13.450000\du,14.000000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{13.345994\du}{14.069338\du}}{\pgfpoint{13.172650\du}{14.034669\du}}{\pgfpoint{13.103312\du}{13.930662\du}}
+\pgfpathcurveto{\pgfpoint{13.033975\du}{13.826656\du}}{\pgfpoint{13.068644\du}{13.653312\du}}{\pgfpoint{13.172650\du}{13.583975\du}}
+\pgfpathcurveto{\pgfpoint{13.276656\du}{13.514637\du}}{\pgfpoint{13.450000\du}{13.549306\du}}{\pgfpoint{13.519338\du}{13.653312\du}}
+\pgfpathcurveto{\pgfpoint{13.588675\du}{13.757319\du}}{\pgfpoint{13.554006\du}{13.930662\du}}{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{13.345994\du}{14.069338\du}}{\pgfpoint{13.172650\du}{14.034669\du}}{\pgfpoint{13.103312\du}{13.930662\du}}
+\pgfpathcurveto{\pgfpoint{13.033975\du}{13.826656\du}}{\pgfpoint{13.068644\du}{13.653312\du}}{\pgfpoint{13.172650\du}{13.583975\du}}
+\pgfpathcurveto{\pgfpoint{13.276656\du}{13.514637\du}}{\pgfpoint{13.450000\du}{13.549306\du}}{\pgfpoint{13.519338\du}{13.653312\du}}
+\pgfpathcurveto{\pgfpoint{13.588675\du}{13.757319\du}}{\pgfpoint{13.554006\du}{13.930662\du}}{\pgfpoint{13.450000\du}{14.000000\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (20.750000\du,14.000000\du)--(20.550000\du,14.000000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (20.750000\du,14.000000\du)--(20.550000\du,14.000000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{20.550000\du}{13.875000\du}}{\pgfpoint{20.675000\du}{13.750000\du}}{\pgfpoint{20.800000\du}{13.750000\du}}
+\pgfpathcurveto{\pgfpoint{20.925000\du}{13.750000\du}}{\pgfpoint{21.050000\du}{13.875000\du}}{\pgfpoint{21.050000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{21.050000\du}{14.125000\du}}{\pgfpoint{20.925000\du}{14.250000\du}}{\pgfpoint{20.800000\du}{14.250000\du}}
+\pgfpathcurveto{\pgfpoint{20.675000\du}{14.250000\du}}{\pgfpoint{20.550000\du}{14.125000\du}}{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{20.550000\du}{13.875000\du}}{\pgfpoint{20.675000\du}{13.750000\du}}{\pgfpoint{20.800000\du}{13.750000\du}}
+\pgfpathcurveto{\pgfpoint{20.925000\du}{13.750000\du}}{\pgfpoint{21.050000\du}{13.875000\du}}{\pgfpoint{21.050000\du}{14.000000\du}}
+\pgfpathcurveto{\pgfpoint{21.050000\du}{14.125000\du}}{\pgfpoint{20.925000\du}{14.250000\du}}{\pgfpoint{20.800000\du}{14.250000\du}}
+\pgfpathcurveto{\pgfpoint{20.675000\du}{14.250000\du}}{\pgfpoint{20.550000\du}{14.125000\du}}{\pgfpoint{20.550000\du}{14.000000\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (35.350000\du,13.950000\du)--(35.700000\du,14.050000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (35.350000\du,13.950000\du)--(35.700000\du,14.050000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfpathcurveto{\pgfpoint{35.665660\du}{14.170190\du}}{\pgfpoint{35.511129\du}{14.256041\du}}{\pgfpoint{35.390939\du}{14.221701\du}}
+\pgfpathcurveto{\pgfpoint{35.270748\du}{14.187361\du}}{\pgfpoint{35.184898\du}{14.032830\du}}{\pgfpoint{35.219238\du}{13.912639\du}}
+\pgfpathcurveto{\pgfpoint{35.253578\du}{13.792449\du}}{\pgfpoint{35.408109\du}{13.706599\du}}{\pgfpoint{35.528299\du}{13.740939\du}}
+\pgfpathcurveto{\pgfpoint{35.648490\du}{13.775279\du}}{\pgfpoint{35.734340\du}{13.929810\du}}{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfpathcurveto{\pgfpoint{35.665660\du}{14.170190\du}}{\pgfpoint{35.511129\du}{14.256041\du}}{\pgfpoint{35.390939\du}{14.221701\du}}
+\pgfpathcurveto{\pgfpoint{35.270748\du}{14.187361\du}}{\pgfpoint{35.184898\du}{14.032830\du}}{\pgfpoint{35.219238\du}{13.912639\du}}
+\pgfpathcurveto{\pgfpoint{35.253578\du}{13.792449\du}}{\pgfpoint{35.408109\du}{13.706599\du}}{\pgfpoint{35.528299\du}{13.740939\du}}
+\pgfpathcurveto{\pgfpoint{35.648490\du}{13.775279\du}}{\pgfpoint{35.734340\du}{13.929810\du}}{\pgfpoint{35.700000\du}{14.050000\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (41.700000\du,14.000000\du)--(42.050000\du,14.050000\du);
+}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\draw (41.700000\du,14.000000\du)--(42.050000\du,14.050000\du);
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{42.050000\du}{14.050000\du}}
+\pgfpathcurveto{\pgfpoint{42.032322\du}{14.173744\du}}{\pgfpoint{41.890901\du}{14.279810\du}}{\pgfpoint{41.767157\du}{14.262132\du}}
+\pgfpathcurveto{\pgfpoint{41.643414\du}{14.244454\du}}{\pgfpoint{41.537348\du}{14.103033\du}}{\pgfpoint{41.555025\du}{13.979289\du}}
+\pgfpathcurveto{\pgfpoint{41.572703\du}{13.855546\du}}{\pgfpoint{41.714124\du}{13.749480\du}}{\pgfpoint{41.837868\du}{13.767157\du}}
+\pgfpathcurveto{\pgfpoint{41.961612\du}{13.784835\du}}{\pgfpoint{42.067678\du}{13.926256\du}}{\pgfpoint{42.050000\du}{14.050000\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{42.050000\du}{14.050000\du}}
+\pgfpathcurveto{\pgfpoint{42.032322\du}{14.173744\du}}{\pgfpoint{41.890901\du}{14.279810\du}}{\pgfpoint{41.767157\du}{14.262132\du}}
+\pgfpathcurveto{\pgfpoint{41.643414\du}{14.244454\du}}{\pgfpoint{41.537348\du}{14.103033\du}}{\pgfpoint{41.555025\du}{13.979289\du}}
+\pgfpathcurveto{\pgfpoint{41.572703\du}{13.855546\du}}{\pgfpoint{41.714124\du}{13.749480\du}}{\pgfpoint{41.837868\du}{13.767157\du}}
+\pgfpathcurveto{\pgfpoint{41.961612\du}{13.784835\du}}{\pgfpoint{42.067678\du}{13.926256\du}}{\pgfpoint{42.050000\du}{14.050000\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{1.000000\du}{1.000000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{8.150000\du}{13.850000\du}}
+\pgfpathcurveto{\pgfpoint{9.859800\du}{13.850000\du}}{\pgfpoint{12.950000\du}{10.850000\du}}{\pgfpoint{13.300000\du}{8.500000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.300000\du}{8.450000\du}}
+\pgfpathcurveto{\pgfpoint{13.700000\du}{10.750000\du}}{\pgfpoint{16.706800\du}{13.750000\du}}{\pgfpoint{18.400000\du}{13.750000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{16.100000\du}{13.750000\du}}
+\pgfpathcurveto{\pgfpoint{17.511000\du}{13.750000\du}}{\pgfpoint{19.850000\du}{10.350000\du}}{\pgfpoint{20.350000\du}{8.650000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.450000\du}{8.750000\du}}
+\pgfpathcurveto{\pgfpoint{20.700000\du}{12.050000\du}}{\pgfpoint{24.291000\du}{14.000000\du}}{\pgfpoint{26.200000\du}{14.000000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.249817\du}{8.049768\du}}
+\pgfpatharc{142}{39}{4.624806\du and 4.624806\du}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{13.300000\du}{8.000000\du}}
+\pgfpathcurveto{\pgfpoint{12.650000\du}{9.550000\du}}{\pgfpoint{10.350000\du}{14.050000\du}}{\pgfpoint{7.350000\du}{13.700000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{20.500000\du}{8.050000\du}}
+\pgfpathcurveto{\pgfpoint{22.550000\du}{13.700000\du}}{\pgfpoint{24.474600\du}{13.950000\du}}{\pgfpoint{26.450000\du}{13.950000\du}}
+\pgfusepath{stroke}
+}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (16.500000\du,8.200000\du){$\psi_+$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (12.900000\du,10.300000\du){};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (12.800000\du,11.100000\du){$\psi_a$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (20.650000\du,11.000000\du){$\psi_b$};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{1.000000\du}{1.000000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.700000\du}{8.500000\du}}
+\pgfpathcurveto{\pgfpoint{35.000000\du}{11.300000\du}}{\pgfpoint{32.627200\du}{13.850000\du}}{\pgfpoint{31.100000\du}{13.850000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.650000\du}{8.500000\du}}
+\pgfpathcurveto{\pgfpoint{37.450000\du}{12.450000\du}}{\pgfpoint{38.489000\du}{14.000000\du}}{\pgfpoint{39.900000\du}{14.000000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{37.650000\du}{14.050000\du}}
+\pgfpathcurveto{\pgfpoint{39.027800\du}{14.050000\du}}{\pgfpoint{41.800000\du}{17.200000\du}}{\pgfpoint{41.800000\du}{19.300000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetdash{{0.400000\du}{0.400000\du}}{0\du}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{45.850000\du}{14.200000\du}}
+\pgfpathcurveto{\pgfpoint{44.588400\du}{14.200000\du}}{\pgfpoint{42.000000\du}{16.450000\du}}{\pgfpoint{42.050000\du}{18.750000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{31.400000\du}{8.300000\du}}
+\pgfpathcurveto{\pgfpoint{31.350200\du}{8.300000\du}}{\pgfpoint{31.299800\du}{8.300000\du}}{\pgfpoint{31.250000\du}{8.300000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.500000\du}{8.150000\du}}
+\pgfpathcurveto{\pgfpoint{35.250000\du}{10.000000\du}}{\pgfpoint{32.560800\du}{13.800000\du}}{\pgfpoint{31.100000\du}{13.800000\du}}
+\pgfusepath{stroke}
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{dialinecolor}
+% was here!!!
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfpathmoveto{\pgfpoint{35.500000\du}{8.250000\du}}
+\pgfpathcurveto{\pgfpoint{35.900000\du}{12.700000\du}}{\pgfpoint{41.250000\du}{14.650000\du}}{\pgfpoint{41.900000\du}{19.000000\du}}
+\pgfusepath{stroke}
+}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (35.450000\du,12.250000\du){$\psi_a$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (41.700000\du,15.350000\du){$\psi_b$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\node[anchor=west] at (38.300000\du,9.450000\du){$\psi_\_$};
+\end{tikzpicture}
+\caption[hàm sóng nguyên tử]{Đồ thị mô tả tổng hợp hai hàm sóng nguyên tử, bonding $\psi_{+}$,và anti-bonding $\psi_{\_}$}
+\label{fig:hàm sóng nguyên tử}
+\end{figure}
+
+\section{Sự hấp thụ của cặp điện tử và lổ trống tự do}
+Như ta đã biết Hamiltonian của điện tử trong từ trường có dạng sau [3,18]
+\begin{equation}
+\mathcal{H}=\frac{1}{2m_0}\left(\mathbf{P} -\frac{e}{c}\mathcal{A}\right)^2 +V(\mathbf{r}) +e\boldsymbol{\phi}
+\end{equation}
+ở đây $\mathbf{P}=m_ev$ là động lượng của điện tử, $m_e$ là khối lượng của điện tử hiệu dụng, $V(\mathbf{r})$ là thế năng điều hòa và $\mathcal{A},\boldsymbol{\phi}$ lần lượt là thế vecto và thế vô hướng của trường điện từ. Như ta đã biết cường độ điện trường và từ trường liên hệ với thế vecto và thế vô hướng như sau:
+\begin{equation}
+ \begin{cases} \mathbf{E}=-\nabla\boldsymbol{\phi} -\frac{1}{c}\frac{\partial \mathcal{A}}{\partial t} \\
+\mathbf{B} = \nabla\times\mathcal{A}
+\end{cases}\qquad(CGSE)
+\end{equation} 
+phương trình (A.13) ta có thể viết lại như sau
+\begin{equation}
+\mathcal{H}=\frac{\mathbf{P}^2}{2m_0}-\frac{e}{2m_0 c}\left(\mathbf{P}\mathcal{A} + \mathcal{A}\mathbf{P}\right)+\frac{e^2}{2m_0 c^2}\mathcal{A}^2 +V(\mathbf{r}) +e\boldsymbol{\phi}
+\end{equation}
+trong cơ học lượng tử ta đã chứng minh được $[x,p_x]=xp_x -p_x x=i\hbar$ thây x bởi hàm $f(r)$ ta dễ dàng có kết quả sau:
+\begin{equation}
+\mathbf{P}\mathcal{A} = \mathcal{A}\mathbf{P} -i\hbar\nabla\mathcal{A}
+\end{equation}
+chú ý vì thế $\mathcal{A}$ và $\phi$ là không đơn trị nên ta có thể chọn tùy ý trong một phạm vi nào đó, tất nhiên sự chọn thế đối với mỗi trường hợp cho trước phải thực hiện đơn giản nhất, sự chọn thế thích hợp nhất như vậy gọi là \emph{sự hiệu chuẩn}, có hai sự hiệu chuẩn được dùng phổ biến nhất đó là hiệu chuẩn Lorentz và sự hiệu chuẩn Coulomb, trong đó sự hiệu chuẩn Coulomb có dạng sau [4]
+\begin{equation}
+\nabla\mathcal{A} = 0
+\end{equation} 
+và sự hiệu chuẩn Coulomb rất thuận lợi khi biểu diễn trường trong miền không có dòng và điện tích, khi đó ta có thể xem $\phi =0$ với những lặp luận trên ta viết lại phương trình (A.15)
+\begin{equation}
+\mathcal{H}=\frac{\mathbf{P}^2}{2m_0}+ V(\mathbf{r})-\frac{e}{m_0 c}\mathbf{P}\mathcal{A} + +\frac{e^2}{2m_0 c^2}\mathcal{A}^2
+\end{equation}
+trong phương trình trên ta sẽ bỏ đi số hạng cuối cùng vì $e\mathcal{A}\ll
+\mathbf{P}$ do đó ta có thể viết lại Hamiltonian như sau:
+\begin{equation}
+\mathcal{H} = \mathcal{H}_0 +\mathcal{H}_{int}
+\end{equation}
+ở đây
+\begin{align*}
+\mathcal{H}_0=\frac{\mathbf{P}^2}{2m_0}+ V(\mathbf{r}),\qquad 
+\mathcal{H}_{int} = \frac{e}{m_0 c}\mathbf{P}\mathcal{A} 
+\end{align*}
+gỉả sử hàm sóng của điện tử phụ thuộc vào thời gian có dạng sau
+\begin{equation}
+\psi_n\left(\mathbf{r},t)\right) = \sum_n a_n(t)\phi_n(\mathbf{r})e^{-i\omega_n t}
+\end{equation}
+trong đó hệ số $ a_n(t)$ thể hiện mối liên hệ xác xuất của trạng thái hấp thụ hoặc phát xạ, thây (A.20) vào (A.19) sau vài phép biến đổi ta có đại lượng $a_m(t)$ như sau:
+\begin{align}
+a_m(t) &=a_m(0) + a_m^{(1)}(t) +\dots \notag\\
+&=\delta_{m,l} +\frac{1}{i\hbar}\int_0^{t}dt^{'}\langle\phi_m\vert \mathcal{H}_{int}\vert \phi_l\rangle e^{i\omega_{ml}t^{'}} +\dots
+\end{align} 
+xác xuất của hai trạng thái m,l có dạng sau đây:
+\begin{equation}
+W_{ml} = \vert a_m \vert^2 = \Bigl\lvert \frac{1}{i\hbar}\int_0^{t}dt^{'}\langle\phi_m\vert \mathcal{H}_{int}\vert \phi_l\rangle e^{i\omega_{ml}t^{'}} \Bigr\rvert^2
+\end{equation}

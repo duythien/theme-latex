@@ -1,0 +1,473 @@
+\chapter{\bfseries Lý Thuyết Cấu Trúc Vùng Năng Lượng Của Điện Tử Trong Bán Dẫn}
+\label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+Để hiểu được các tính chất quang học của chất bán dẫn, chẵn hạn như tính hấp thụ, khếch đại, dẫn điện, độ phân cực..., chúng ta cần phải biết cấu trúc vùng năng lượng, trong chương này ta sẽ thảo luận phương pháp tính toán cấu trúc vùng năng lượng của  một số chất bán dẫn, như chúng ta biết hầu hết các thiết bị quang học đều được cấu tạo từ các chất bán dẫn có vùng cấm là "thẳng" hay "trực tiếp", GaAs là chất như vậy, chất mà có đấy vùng dẫn và đỉnh của vùng hóa trị, nằm ở cùng một điểm trong vùng Brillouin, chất có đặt trưng như vậy sẽ rất thuận tiện nếu ta dùng phương pháp kp, sau đây ta sẽ nhắc lại một chút về định lý Bloch.
+\section{Định lý Bloch}
+Trong tinh thể lý tưởng, các ion dương sắp sếp một cách trật tự, tuần hoàn tại các nút mạng, các các điện tử hóa trị đồng vai trò là hạt tải điện được xem là chuyển động độc lập với nhau, trong một trường tuần hoàn được tạo bởi các ion dương, giả sử gọi $\mathit{l}$ là khoảng cách giữa các nút mạng lân cận, do tính chất đối xứng tịnh tiến của mạng tinh thể nên thế năng của điện tử trong tinh thể cũng có tính tuần hoàn tức:
+\begin{equation}
+\mathcal{T}_n V_0\left(\mathbf{r}\right) = V_0\left(\mathbf{r+\mathit{l}_n}\right) = V_0\left(\mathbf{r}\right)
+\end{equation}
+trong đó $\mathbf{\mathcal{T}_n}$ là toán tử tịnh tiến, $V_0\left(r\right)$ là thế năng hiệu dụng của điện tử do sự chồng chất của hạt nhân và các điện tử khác trong nguyên tử, như vậy Hamiltonian của điện tử trong nguyên tử có dạng sau:
+\begin{equation}
+\mathbf{\mathcal{H}_0} = \frac{\mathbf{p}^2}{2m_0} + \mathbf{V_0\left(\mathbf{r}\right)}
+\end{equation}
+cũng có tính chất tuần hoàn (đối xứng tịnh tiến) do ($\nabla_{r}^2 = \nabla_{r+l}^2$), biểu thức $(3.1)$ cho thấy các điểm $\mathbf{r}$ và $\mathbf{r+\mathit{l}}$ là tương đương với nhau về phương diện vật lý, do đó nếu đặt vào Hamiltonian $(2.2)$ tức ta thây $\mathbf{r}$ thành $\mathbf{r+\mathit{l}}$ thì hàm sóng điện tử ở vị trí $\mathbf{r}$  và $\mathbf{r+\mathit{l}}$ chỉ khác nhau một thừa số pha.
+\begin{equation}
+\mathcal{T}_n\psi\left(\mathbf{r}\right) = \psi\left(\mathbf{r+\mathit{l}_n}\right) = C_n\psi\left(\mathbf{r}\right)
+\end{equation}
+ Điều này có nghĩa là, khi dịch chuyển đi một véctơ tịnh tiến của mạng, do tính tuần hoàn của $V_0\left(\mathbf{r}\right)$, môđun của hàm sóng $\|\psi\left(\mathbf{r}\right)\|$ không đổi, chỉ có pha nó là thây đổi
+ \begin{equation}
+ \int\psi\left(\mathbf{r+l}\right)\psi^*\left(\mathbf{r+\mathit{l}}\right)dr = \|C_n\|^2  \int\psi\left(\mathbf{r}\right)\psi^*\left(\mathbf{r}\right)dr
+ \end{equation}
+Từ điều kiện chuẩn hóa của hàm sóng:
+\begin{equation}
+\int\psi\left(\mathbf{r}\right)\psi^*\left(\mathbf{r}\right)dr = 1     \Longrightarrow \|C_n\|^2 = 1
+\end{equation}
+Như vậy, $C_n$ hoặc phải bằng 1 hoặc bằng hàm số mũ với số mũ ảo. Vì hàm sóng biểu thị cho chuyển động của tinh thể, nên ở đây ta lấy $C_n$ là hàm mũ, số mũ có dạng sau [17].
+\begin{equation}
+C_n = e^{i\mathbf{k}\mathit{l}}
+\end{equation}
+trong đó $\mathbf{k}$ có thứ  nguyên trùng với thứ nguyên véctơ sóng (1/độ dài) nên ta cũng gọi nó là véctơ sóng, mỗi véctơ sóng  $\mathbf{k}$ khác nhau đặc trưng cho trạng thái của điện tử trong tinh thể(hay trong trường tuần hoàn). Chính xác ta nói  $\mathbf{k}$ là tập hợp 3 số lượng tử  đặc trưng cho trạng thái$\left(k_1,k_2,k_3\right)$. Giống như điện tử trong nguyên tử với bội 4 số lượng tử $\left(n,l,m,s\right)$ ta sẽ thấy điện tử trong tinh thể cũng có 4 số lượng tử $\left(k_x,k_y,k_z,s_z\right)$, do đó ta thêm chỉ số $\mathbf{k}$ vào hàm sóng của điện tử trong tinh thể:
+\begin{equation}
+\psi_k\left(\mathbf{r} + \mathit{l}\right) = e^{i\mathbf{r}\mathit{l}}\psi_k\left(\mathbf{r}\right)
+\end{equation}
+hay viết dưới dạng toán tử:
+\begin{equation}
+\mathcal{T}\psi_k\left(\mathbf{r}\right) = \psi_k\left(\mathbf{r}+\mathit{l}\right) = e^{i\mathbf{k}\mathit{l}}\psi_k\left(\mathbf{r}\right)
+\end{equation}
+biểu thức $(3.7)$ được biết đến như là một định lý Bloch.
+Từ đây ta thấy rằng, hàm riêng của toán tử tịnh tiến $\mathcal{T}$ là $\psi\left(\mathbf{r}\right)$ và $e^{i\mathbf{k}\mathit{l}}$ là trị riêng tương ứng của hàm riêng đó.\\
+Có thể chứng minh, toán tử Hamiltonian $\mathcal{H}$ và toán tử tịnh tiến $\mathcal{T}$ là giao hoán với nhau, do đó chúng có chung hệ hàm riêng, vì vậy hàm sóng của Hamiltonian của điện tử chuyển động trong tinh thể cũng thỏa mãn điều kiện tịnh tiến ở phương trình $(3.7)$, nhân 2 vế của $(3.7)$ với 
+$e^{-i\mathbf{k}(\mathbf{r}+\mathit{l})}$ ta có:
+\begin{equation}
+e^{-i\mathbf{k}\left(\mathbf{r}+\mathit{l}\right)}\psi_k
+\left(\mathbf{r}+\mathit{l}\right)
+ = e^{-i\mathbf{kr}}e^{-i\mathbf{k}\mathit{l}}
+ e^{i\mathbf{k}\mathit{l}}\psi_k\left(\mathbf{r}\right) =
+  e^{-i\mathbf{kr}}\psi_k\left(\mathbf{r}\right)
+\end{equation}
+đặt:
+\begin{gather}
+u_k\left(\mathbf{r}\right) = e^{-i\mathbf{kr}}\psi_k\left(\mathbf{r}\right) \\
+\Longrightarrow   u_k\left(\mathbf{r}+\mathit{l}\right) = 
+e^{-i\mathbf{k}\left(\mathbf{r}+\mathit{l}\right)}
+\psi_k\left(\mathbf{r}+\mathit{l}\right) =
+e^{-i\mathbf{kr}}\psi_k\left(\mathbf{r}\right) = u_k\left(\mathbf{r}\right)
+\end{gather}
+từ $(3.10)$ ta có:
+\begin{gather}
+\psi_k\left(\mathbf{r}\right) = e^{i\mathbf{kr}}u_k\left(\mathbf{r}\right)
+\end{gather}
+trong đó
+\begin{equation}
+ u_k\left(\mathbf{r}+ \mathit{l}\right) = u_k\left(\mathbf{r}\right)
+\end{equation}
+Như vậy điện tử trong tinh thể được mô tả bởi sóng phẳng có biên độ biến đổi một cách tuần hoàn theo chu kỳ của trường tinh thể. Hàm $(3.12)$ được gọi là hàm Bloch. 
+
+\section{Phương pháp kp}
+   Để làm việc với phương pháp kp ta không quan tâm tới toàn bộ các dãi năng lượng, mà ta chỉ xét lân cận các cực trị của dãi năng lượng, theo sơ đồ dãi năng lượng $\mathbf{E}\left(\mathbf{k}\right)$ thì trong một dãy năng lượng $\mathbf{E}\left(\mathbf{k}\right)$ thay đổi theo $\mathbf{k}$ đạt cực đại rồi cực tiểu, thường thì ứng với $k_0=0$ năng lượng đạt cực trị nếu không ta phải tịnh tiến gốc để đạt được điều này, sau khi khảo sát tại điểm  $k_0$ ta mở rộng kết quả cho các trạng thái lân cận điểm  $k_0=0$, vậy ta có thể triển khai hàm sóng theo  $k_0=0$  như sau.
+\begin{equation}
+u_{m\mathbf{k}}\left(\mathbf{r}\right) = \sum_{n}a_{m\mathbf{k}}^nu_n\left(\mathbf{r}\right)
+\end{equation}
+trong đó $u_n\left(\mathbf{r}\right)$ thỏa mãn phương trình sau:
+\begin{equation}
+\left(\frac{p^2}{2m_0}+V_0(\mathbf{r}) \right)u_{n}(\mathbf{r}) = E_0u_{n}(\mathbf{r})
+\end{equation}
+thật vậy, xét tương tác của điện tử ở lân cận cực trị này bằng phương trình Schr$\ddot{o}$dinger:
+\begin{equation}
+\left(\frac{p^2}{2m_0}+V_0(\mathbf{r}) \right)\psi_{m\mathbf{k}}(\mathbf{r}) = E_{mk}\psi_{m\mathbf{k}}(\mathbf{r})
+\end{equation}
+ở đây: $m_0$ là khối lượng hiệu dụng của điện tử tụ do, $V_0$ thế dao dộng tuần hoàn, $m$ ở đây ta xem nó như là chỉ số đặc trưng của dãy năng lượng, $\mathbf{k}$ là véctơ sóng, 
+thay $\psi_{m\mathbf{k}}$ ở phương trình $(3.12)$ vào$(3.16)$ ta có: \\
+\begin{align}
+&\left(\frac{p^2}{2m_0}+V_0(\mathbf{r}) + \frac{\hbar}{m_0}\mathbf{kp}+\frac{\hbar^2 k^2}{2m_0} \right)u_{m\mathbf{k}}(\mathbf{r}) = E_{mk}u_{m\mathbf{k}}(\mathbf{r})
+\notag \\
+&\Longleftrightarrow \left(\mathcal{H}_0 + \frac{\hbar}{m_0}\mathbf{kp}+\frac{\hbar^2 k^2}{2m_0}\right)u_{m\mathbf{k}}(\mathbf{r}) = E_{mk}u_{m\mathbf{k}}(\mathbf{r})
+\end{align}
+
+trong đó $\mathcal{H}_0$ thỏa mãn phương trinh $(3.15)$, để giải phương trình $(3.17)$ ta sử dụng lý thuyết nhiễu loạn không suy biến bậc 2 [23]:
+\begin{equation}
+\Longrightarrow E_{m\mathbf{k}}=E_{m0}+\frac{\hbar^2 k^2}{2m_0}+\frac{\hbar\mathbf{k}}{m_0}\langle m0|\mathbf{p} |m0\rangle +\frac{\hbar^2}{m_0}\sum_{m \ne n}\frac{{|\mathbf{k}\langle m0|\mathbf{p} |n0\rangle |}^2}{E_{m0}-E_{n0}}
+\end{equation}
+phương trình ở trên ta có thể viết lại dạng sau:
+\begin{equation}
+ E_{m\mathbf{k}}=E_{m0}+\frac{\hbar^2 k^2}{2m_0}+\frac{\hbar}{m_0}\mathbf{kp}_{mm} +\frac{\hbar^2}{m_0^2}\sum_{m \ne n}\frac{{|\mathbf{k}\mathbf{p}_{mn} |}^2}{E_{m0}-E_{n0}}
+\end{equation}
+trong đó:
+\begin{equation}
+\mathbf{p}_{mn}=\mathbf{p}_{mn}^\alpha=\int_{cell}\mathbf{u}_{m0}^*\mathbf{p}\mathbf{u}_{n0}\mathbf{dr}=
+\int_{cell}\mathbf{u}_{m0}^*\left(\frac{h}{i}\nabla_\alpha \right)\mathbf{u}_{n0}\mathbf{dr}
+\end{equation}
+là mômen động lượng (có dạng ma trận) và có tính chất sau:
+\begin{equation}
+\mathbf{p}_{mm}^\alpha = 0;\mathbf{p}_{mn}^\alpha =\mathbf{p}_{nm}^\alpha = \left(\mathbf{p}_{mm}^\alpha \right)^*
+\end{equation}
+nếu ta xem điểm $k_0$ là điểm cực trị của hàm năng lượng $E_{n}\left(\mathbf{k}\right)$ thì ta có thể có được tính chất sau:
+\begin{equation}
+\mathbf{p}_{mn}^\alpha = \frac{m}{\hbar ^2}\left(\frac{\partial E_n\left(\mathbf{k}\right)}{\partial \mathbf{k}_\alpha}\right) = 0
+\end{equation}
+thây biểu thức $(3.21)$ và đồng thời viết lại biểu thức $(3.19)$ ta có kết quả sau:
+\begin{equation}
+ E_{m\mathbf{k}}=E_{m0}+\frac{\hbar^2 k^2}{2m_0} +\frac{\hbar^2}{m_0^2}\mathbf{k_\alpha}\mathbf{k_\beta}\sum_{m \ne n}\frac{{\mathbf{p}_{mn}^\alpha \mathbf{p}_{mn}^\beta }}{E_{m0}-E_{n0}}
+\end{equation}
+trong đó $\alpha,\beta=x,y,z$ là chỉ số Ensitanh, do đó ta có thể dẫn ra công thức sau:
+\begin{equation}
+\left(\frac{1}{m^*}\right)_{\alpha\beta}=\frac{1}{m_0}\delta_{\alpha\beta} +\frac{2}{m}\sum_{m \ne n}\frac{{\mathbf{p}_{mn}^\alpha \mathbf{p}_{mn}^\beta }}{E_{m0}-E_{n0}}
+\end{equation}
+Được gọi là tenso nghịch đảo của tenso khối lượng hiệu dụng do sự tương ứng với năng lượng cổ điển tự do, vậy công thức $(3.23)$ có thể viết lại như sau:
+\begin{equation}
+E_n\left(k\right) =E_0\left(k\right)+ \frac{\hbar^2}{2}\mathbf{k_\alpha}\mathbf{k_\beta}\left(\frac{1}{m^*}\right)_{\alpha\beta}
+\end{equation} 
+để tính bổ chính năng lương ta có nhận xét sau đây:
+\begin{equation}
+\langle \mathbf{u}_{m0}\left(\mathbf{r}\right)|\mathbf{p}|\mathbf{u}_{n0}\left(\mathbf{r}\right)\rangle \approx |\mathbf{p}| \approx \frac{\hbar}{a}
+\end{equation}
+\begin{equation}
+\Longrightarrow \frac{1}{m^*} \approx \frac{1}{m}+\frac{2\hbar^2}{m^2a^2\Delta\epsilon}  \qquad \text{ với}\qquad \Delta\epsilon = E_{m0}-E_{n0}
+\end{equation}
+
+Hàm sóng của điện tử lúc này có dạng sau:
+\begin{equation}
+u_{mk}\left(\mathbf{r}\right) = u_{m0}\left(\mathbf{r}\right) + \left(\sum_{m\neq n}\frac{\hbar}{m_0}\frac{\mathbf{k}\mathbf{p}_{mn}^\alpha}{E_{m}-E_{n0}}\right)u_{n0}\left(\mathbf{r}\right) \equiv a_{mk}^nu_{nk}\left(\mathbf{r}\right)
+\end{equation}
+để ý chúng ta đã quay lại giả thiết ở biểu thức $(3.14)$, ở trên chúng ta chưa xét đến tương tác spin-orbit nếu chúng ta xét đến tương tác đó ta cần phải thêm số hạn sau:
+\begin{equation}
+\mathcal{H}_{SO} = \frac{\hbar}{4m^2_0}\boldsymbol{\sigma} \cdot \left(\boldsymbol{\nabla} V_0\times \boldsymbol{p} \right) =  \frac{\hbar}{4m^2_0}\left(\boldsymbol{\sigma}\times \boldsymbol{\nabla}V_0\right)\cdot\boldsymbol{p}
+\end{equation}
+trong đó $\boldsymbol{\sigma}$ là véctơ ma trận Pauli, và hàm sóng điện tử trong tinh thể thỏa mãn định lý Bloch
+\begin{equation}
+\psi_{m\mathbf{k}}(r) = e^{i\mathbf{kr}}u_{m\mathbf{k}}(\mathbf{r})
+\end{equation}
+với $u_{m\mathbf{k}}(\mathbf{r})$ là hàm tuần hoàn theo chu kỳ tinh thể, và hàm Bloch có tính chất sau đây.
+\begin{align}
+\left \langle\psi_{m\mathbf{k}}\Bigl\vert\psi_{m'\mathbf{k}'}\right \rangle &\equiv \int d\mathcal{V}\psi_{m\mathbf{k}}^*(\mathbf{r})\psi_{m'\mathbf{k}'}(\mathbf{r}) = \delta_{mm'}\delta\left(\boldsymbol{k-k'}\right) \\
+\left \langle u_{m\mathbf{k}}\Bigl\vert u_{m'\mathbf{k}'}\right \rangle &\equiv \int d\Omega u_{m\mathbf{k}}^* u_{m'\mathbf{k}'} = \delta_{mm'}\frac{\Omega}{\left(2\pi \right)^3}
+\end{align}
+ở đây $V\left(\Omega\right)$ là thể tích chuẩn hóa của tinh thể(unit-cell). Hamiltonian của hệ lúc này có dạng tổng quát như sau:
+\[H=\mathcal{H}_0 +\mathcal{H}_{SO}\]
+lặp lại các phép tính tương tự như trên, chúng ta có kết quả tương tự nhưng chỉ khác nhau ở một chỗ là thành phần động lượng $p_{mn}^\alpha$ lúc này có dạng như sau $\pi_{mn}$:
+\begin{equation}
+\boldsymbol{\pi_{mn}}=\int_{cell} u_{m0}^*\left( \frac{\hbar}{i}\nabla_\alpha + \frac{1}{4m_0c^2} \left(\boldsymbol {\sigma}\times\boldsymbol{ \nabla} V\right)\right)u_{n0}d\mathbf{r}
+\end{equation} 
+còn năng lượng của nó có dạng sau:
+\begin{equation}
+ E_{m\mathbf{k}}=E_{m0}+\frac{\hbar^2 k^2}{2m_0}+\frac{\hbar}{m_0}\mathbf{k}\boldsymbol{\pi}_{mm} +\frac{\hbar^2}{m_0^2}\sum_{m \ne n}\frac{{\Bigl\vert\mathbf{k}\boldsymbol{\pi}_{mn} \Bigr\vert}^2}{E_{m0}-E_{n0}}
+\end{equation}
+cần chú ý rằng ta có thể chứng minh $[11]$:
+\begin{equation}
+\boldsymbol{\pi}_{mm}^\alpha=\boldsymbol{\pi}_{mm}= \frac{m}{\hbar^2}\left(\frac{\partial E_m\left(k\right)}{\partial \mathbf{k}_\alpha}\right)_0
+\end{equation}
+nếu ta xét điểm $k_\alpha$ là điểm cực trị thì $\boldsymbol{\pi_{mn}}=0$, do đó ta viết biểu thức $(3.34)$ lại như sau:
+\begin{equation}
+ E_{m\mathbf{k}}=E_{m0}+\frac{\hbar^2 k^2}{2m_0} +\frac{\hbar^2}{m_0^2}\sum_{m \ne n}\frac{{\Bigl\vert\mathbf{k}\boldsymbol{\pi}_{mn}\Bigl\vert}^2}{E_{m0}-E_{n0}}=E_{m0}+\frac{\hbar^2}{m_0}\mathbf{k_\alpha}\mathbf{k_\beta}\left(\frac{1}{m^*}\right)_{\alpha\beta}
+\end{equation}
+
+\section{Mô hình kp 2 vùng,kp 4 vùng}
+\subsection{Mô hình kp 2 vùng}
+Theo $(3.28)$ ta có thể viết hàm sóng điện tử như sau: 
+\begin{equation}
+u_{m\mathbf{k}}\left(\mathbf{r}\right) = \sum_n a_{m\mathbf{k}}^nu_{n0}\left(\mathbf{r}\right)
+\end{equation}
+
+thây biểu thức trên vào $(3.17)$ và nhân $u_{n0}^*$ vào bên trái của 2 vế, đồng thời lấy tích phân và chuẩn hóa hàm sóng ta có kết quả sau:
+\begin{equation}
+\mathlarger{\sum_{n'}} \mathsmaller{\left[  \left(E_{n0}+\frac{\hbar^2 k^2}{2m_0}\right)\delta_{nn'}  +\frac{\hbar}{m_0}\mathbf{k}\mathbf{p}_{nn'}\right]a_{m\mathbf{k}}^{n'}}
+=E_{mk}a_{m\mathbf{k}}^n
+\end{equation}
+chú ý rằng ở đây ta đã sử dụng tính chất $\int u_{n0}^*u_{n'0}d\mathbf{r}=\delta_{nn'}$. Để tìm năng lượng của điện tử, ta  giải phương trình trên tức ta đi tính định thức sau:
+ \begin{equation}
+ \begin{Vmatrix}
+ E_{n0}+\frac{\hbar^2 k^2}{2m_0} -E       & \frac{\hbar}{m_0}\mathbf{k}\mathbf{p}_{nn'} \\
+ \frac{\hbar}{m_0}\mathbf{k}\mathbf{p}_{n'n}    & E_{n'0}+\frac{\hbar^2 k^2}{2m_0} -E 
+ \end{Vmatrix} =0
+ \end{equation}
+ sau vài bước tính toán ta có kết quả sau:
+ \begin{equation}
+ E = \frac{1}{2}\left[ E_n+E_{n'}+\frac{\hbar^2}{m_0}k^2\right] \pm \left[\frac{1}{2}\left(E_n-E_{n'}\right)^2+\frac{4\hbar^2}{m_0^2}|kp|^2\right]^{1/2}
+\end{equation} 
+ Bây giờ ta xét 2 dãy năng lượng, dãy thứ nhất tương ứng vùng dẫn $\left(n=c\right)$ và dãy thứ 2 tương ứng với vùng hóa trị $\left(n'=v\right)$, giả sử ta chọn điểm $\mathbf{k}_0=0 $ \emph{sao cho} $E_v=0\Longrightarrow E_c=E_g$
+vậy ta có thể viết lại định thức trên như sau:
+  \begin{equation}
+ \begin{Vmatrix}
+ E_{c}+\frac{\hbar^2 k^2}{2m_0} -E       & \frac{\hbar}{m_0}\mathbf{k}\mathbf{p}_{cv} \\
+ \frac{\hbar}{m_0}\mathbf{k}\mathbf{p}_{vc}    & E_{v}+\frac{\hbar^2 k^2}{2m_0} -E 
+ \end{Vmatrix} =0
+ \end{equation}
+ và năng lượng của điện tử là:
+ \begin{equation}
+ E = \frac{1}{2}\left(E_g+\frac{\hbar^2 k^2}{m_0} \right) \pm \frac{1}{2}\left[ E_g^2 +4\frac{\hbar^2}{m_0^2}|kp|^2\right]^{1/2}
+ \end{equation}
+xét trường hợp $kp_{cv}$  rất nhỏ ta có:
+\begin{equation}
+E=\left\{
+ \begin{array}{cc}
+E_g+\frac{\hbar^2 k^2}{2m_0}+\frac{\hbar^2}{E_gm_0^2}|kp_{cv}|^2 \qquad \text{vùng dẫn} \\
+\frac{\hbar^2 k^2}{2m_0}-\frac{\hbar^2}{E_g m_0^2}|kp_{cv}|^2 \qquad \qquad \text{vùng hóa trị}
+ \end{array} \right.
+\end{equation}
+và ta giả sử $p_{cv}$ là đẳng hướng vì vậy ta có $\vec{k}\vec{p}_{cv}=kp_{cv}$, vì vậy ta có thể suy ra khối lượng hiệu dụng ở vùng hóa trị và vùng dẫn như sau:
+\begin{equation}
+\Longrightarrow\left\{
+\begin{array}{cc}
+\frac{1}{m_v^*}&=\frac{1}{m_0}-\frac{2p_{cv}^2}{E_g}\\
+\frac{1}{m_c^*}&=\frac{1}{m_0}+\frac{2p_{cv}^2}{E_g}
+\end{array} \right.
+\end{equation}
+ 
+ \subsection{Mô hình kp 4 vùng}
+Để thấy rõ hơn ta xét trường hợp mô hình 4 vùng, trước hết để đơn giản ta bỏ qua trường hợp có tương tác spin-orbit, và xét 1 dãy dẫn và 3 dãy hóa trị .
+ \begin{itemize}
+ \item [a.] 1 dãy dân tương ứng với năng lượng $E_s$ 
+ \item [b.] 3 dãy hóa trị tương ứng với năng lượng $E_p$
+ \end{itemize}
+ và ta xét tại điểm $k_0=0$ ta có:
+ \begin{align}
+ &\mathcal{H}_0u_{s0}(\mathbf{r}) = E_s^0u_{s0}(\mathbf{r}),
+ \mathcal{H}_0u_{p_x0}(\mathbf{r}) = E_{p_x}^0u_{p_x0}(\mathbf{r}) \notag  \\
+ &\mathcal{H}_0u_{p_y0}(\mathbf{r}) = E_{p_y}^0u_{p_y0}(\mathbf{r}),
+ \mathcal{H}_0u_{p_z0}(\mathbf{r}) = E_{p_z}^0u_{p_z0}(\mathbf{r})
+\end{align}  
+khi $k\neq 0$ theo $(3.14)$ ta có thể mở rộng hàm sóng điện tử lận cận điểm $k \neq 0$. Sử dụng các công thức ở trên và tính toán tương tự ta dẫn ra được ma trận sau đây:
+\begin{equation}
+u_{m\mathbf{k}}(\mathbf{r})=\sum_n a_{m\mathbf{k}}^n u_{n0}(\mathbf{r}) \qquad m=1,2,3,4,n \in {s,p_x,p_y,p_z}
+\end{equation} 
+
+\begin{equation}
+\begin{pmatrix}
+E_s^0+\frac{\hbar^2 k^2}{2m_0} & \frac{\hbar}{m_0}k_xp & \frac{\hbar}{m_0}k_yp & \frac{\hbar}{m_0}k_zp \\
+\frac{\hbar}{m_0}k_xp^* & E_p^0+\frac{\hbar^2 k^2}{2m} & 0 & 0 \\
+\frac{\hbar}{m_0}k_yp^* & 0 & E_p^0+\frac{\hbar^2 k^2}{2m}  & 0 \\
+\frac{\hbar}{m_0}k_zp^* & 0 &0 & E_p^0+\frac{\hbar^2 k^2}{2m}  
+\end{pmatrix}
+\begin{pmatrix}
+a_{1k}^s \\
+ a_{2k}^{p_x} \\
+  a_{3k}^{p_y} \\
+   a_{4k}^{p_z}
+\end{pmatrix}
+=E_{mk}\begin{pmatrix}
+a_{1k}^s \\
+ a_{2k}^{p_x} \\
+  a_{3k}^{p_y} \\
+   a_{4k}^{p_z}
+\end{pmatrix}
+\end{equation}
+để tính năng lượng của điện tử ta giải phương trình trên, ta sử dụng phần mềm Mapple ta tính được kết quả sau:
+\begin{align}
+&\left[\left(E_{mk} -\frac{\hbar^2 k^2}{2m_0}\right)^2 - (E_{mk}-\frac{\hbar^2}{2m_0})(E_s^0+E_p^0)+E_p^0E_p^0 -\left(\frac{\hbar}{m}\mathbf{k}|p|\right)^2 \right]\notag \\
+&\times \left(E_{mk} -\frac{\hbar^2 k^2}{2m_0 -E_p^0} \right)^2 =0
+\end{align}
+vì vậy ta có thể có năng lượng ở các dãy như sau:
+\begin{align}
+E_{m\mathbf{k}}=&E_s^0 +\frac{\hbar^2 k^2}{2m_0},\notag \\
+E_{m\mathbf{k}}=&\frac{E_s^0 +E_p^0}{2} \pm \sqrt{\left(\frac{E_s^0 +E_p^0}{2}\right)^2 +\left(\frac{\hbar}{m_0}\mathbf{k}|p|\right)^2}+\frac{\hbar^2 k^2}{2m_0}
+\end{align}
+Bây giờ ta xét đến số hạng  tương tác spin-orbit:
+\begin{equation}
+\mathcal{H}_{SO} = \frac{\hbar}{4m^2_0}\boldsymbol{\sigma} \cdot \left(\boldsymbol{\nabla} V_0\times \boldsymbol{p} \right) =  \frac{\hbar}{4m^2_0}\left(\boldsymbol{\sigma}\times \boldsymbol{\nabla}V_0\right)\cdot\boldsymbol{p}
+\end{equation}
+phương trình Schr$\ddot{o}$dinger lúc này có dạng sau:
+\begin{equation}
+\left[\mathcal{H}_0+\frac{{\hbar}^2k^2}{2m_0}+\frac{\hbar}{m_0}\boldsymbol{k}\left(\boldsymbol{p}+\frac{\hbar}{4m^2_0}\boldsymbol{\sigma}\times\boldsymbol{\nabla} V_0 \right)+\frac{\hbar}{4m^2_0}\boldsymbol{\sigma}\left(\boldsymbol{\nabla} V_0\times \boldsymbol{p} \right)\right]u_{m\mathbf{k}}(\mathbf{r}) = E_{m\mathbf{k}}u_{m\mathbf{k}}(\mathbf{r})
+\end{equation}
+ở biểu thức trên ta cần chú ý rằng do vận tốc quỹ đạo của điện tử rất là lớn so với vận tốc của  một hàm sóng lân cận điểm $k_0$, nói cách khác mômen động lượng của nguyên tử trong tinh thể là rất nhỏ so với mômen động lượng của điện tử  quay quanh nguyên tử ta viết lại biểu thức ở trên như sau:
+\begin{equation}
+\Longrightarrow \mathcal{H}u_{m\mathbf{k}}(\mathbf{r}) \approx \left(\mathcal{H}_0 +\frac{\hbar^2 k^2}{2m_0}+\frac{\hbar}{m_0}\mathbf{kp}+ \frac{\hbar}{4m^2_0}\boldsymbol{\sigma}\left(\boldsymbol{\nabla} V_0\times \boldsymbol{p} \right)\right)u_{m\mathbf{k}}(\mathbf{r})=E_{m\mathbf{k}}u_{m\mathbf{k}}(\mathbf{r})
+\end{equation}  
+\subsubsection{Phân tích hàm sóng cơ sở và thành phận ma trận Hamiltonian}
+\begin{itemize}
+\item[-] Ta viết lại 
+\begin{equation}
+u_{m\mathbf{k}}(\mathbf{r})= \sum_n a_{mk}^n u_{n0}(\mathbf{r})
+\end{equation}
+\item[-] Vùng dẫn:$\left| S\Bigl\uparrow \right\rangle,\left| S\Bigl\downarrow\right\rangle \qquad \text{với năng lượng}:E_s$
+
+\item[-] Vùng hóa trị:$\left| X\Bigl\uparrow\right\rangle,\left| Y\Bigl\uparrow\right\rangle,
+\left |Z\Bigl\uparrow\right\rangle,
+\left|X\Bigl\downarrow\right\rangle,
+\left|Y\Bigl\downarrow\right\rangle,
+\left|Z\Bigl\downarrow\right\rangle \qquad \text{với năng lượng}:E_p
+$
+\end{itemize}
+trong đó:$\mathcal{H}_0\left|S\Bigl\uparrow\right\rangle=E_s\left|S\Bigl\uparrow\right\rangle,\mathcal{H}_0\left|S\Bigl\downarrow\right\rangle=E_s\left|S\Bigl\downarrow\right\rangle,\mathcal{H}_0\left|X\Bigl\uparrow\right\rangle=E_p\left|X\Bigl\uparrow\right\rangle,\mathcal{H}_0\left|X\Bigl\downarrow\right\rangle=E_p\left|X\Bigl\downarrow\right\rangle \ldots$
+có nhiều cách khác nhau để chọn hàm sóng cơ sở $u_{n0}(\mathbf{r})$ nhưng để cho thuận lợi cho việc tính toán ma trận Hamiltonian, ta chọn hàm sóng $u_{n0}(\mathbf{r})$ như sau [23,9,24]:
+\begin{align}
+|u_1\rangle =|S\downarrow\rangle, |u_2\rangle=\left |\frac{X-iY}{\sqrt{2}}\Bigl\uparrow \right\rangle, |u_3\rangle= \left |Z\downarrow \right\rangle, |u_4\rangle =-\left |\frac{X+iY}{\sqrt{2}}\Bigl\uparrow \right\rangle 
+\end{align}
+\begin{equation}
+|u_5\rangle = |S\uparrow\rangle, |u_6\rangle=-\left|\frac{X+iY}{\sqrt{2}}\Bigl\downarrow\right\rangle, |u_7\rangle=\left |Z\uparrow\right\rangle, u_8\rangle=\left |\frac{X-iY}{\sqrt{2}}\Bigl\downarrow\right\rangle
+\end{equation}
+ở đây$|S\rangle=S(\mathbf{r}),|X\rangle=xf(\mathbf{r}),|Y\rangle=yf(\mathbf{r})$, xét nếu \emph{x} lẽ $\rightarrow \emph{f(x)} $ phải chẳn, tức $X(x,y,z)=-X(-x,y,z)$,
+ ma trận Pauli
+\begin{equation}
+\delta_x=\begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix}
+\delta_y=\begin{bmatrix}
+0 & -i \\
+i & 0
+\end{bmatrix}
+\delta_z=\begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix}
+\end{equation}
+spin up: $|\uparrow\rangle=\begin{bmatrix}
+1 \\ 0
+\end{bmatrix}$ và spin down:$|\downarrow\rangle=\begin{bmatrix}
+0 \\1
+\end{bmatrix}$ và ta có tính chất sau$\langle\uparrow|\uparrow\rangle=\langle\downarrow|\downarrow\rangle=1,\langle\uparrow|\downarrow\rangle=\langle\downarrow|\uparrow\rangle=0$ \\
+Sau đây ta sẽ tính toán vài thành phần ma trận trong Hamiltonian: 
+\begin{align*}
+\mathcal{H}_{11}&=\Bigl\langle u_1\Bigl\vert H \Bigr\vert u_1\Bigr\rangle =
+\Bigl\langle S\Bigl \downarrow\Bigl\vert \mathcal{H}_0 + \frac{\hbar^2 k^2}{2m_0} +\frac{\hbar}{m}\mathbf{kp}+\frac{\hbar}{4m_0^2c^2}\sigma\cdot\nabla V\times p \Bigr\vert S\Bigr\downarrow \Bigr\rangle  \\
+&=\Bigl\langle S\Bigl\downarrow \Bigl\vert \mathcal{H}_0+\frac{\hbar^2 k^2}{2m_0}\Bigr\vert S\Bigr\downarrow \Bigr\rangle +
+\Bigl\langle S\Bigl\downarrow\frac{\hbar}{m}\mathbf{kp} \Bigr\vert S\Bigr\downarrow\Bigr\rangle +
+\Bigl\langle S\Bigl\downarrow \Bigr\vert \frac{\hbar}{4m_0^2c^2}\sigma\cdot\nabla V\times \mathbf{p}\Bigr\vert S\Bigr\downarrow \Bigr\rangle
+\end{align*}
+
+xét $\langle S\downarrow |p|S\downarrow\rangle=\langle S|p|S\rangle=\int S(\mathbf{r})\frac{\hbar}{i}\nabla S(\mathbf{r})\mathbf{dr} =0$\\
+và $\sigma(\nabla V\times \mathbf{p})=\sigma_x(\nabla V\times p)_x+\sigma_y(\nabla V\times p)_y+\sigma_z(\nabla V\times p)_z$;
+mà $\langle\downarrow|\sigma_x|\downarrow\rangle=\langle\downarrow|\sigma_x|\downarrow\rangle=0$
+
+\begin{equation}
+\Longrightarrow \mathcal{H}_{11}= E_s^0 +\frac{\hbar^2 k^2}{2m_0}+\Bigl\langle S\Bigl\vert(\nabla V\times \mathbf{p})_z\Bigr\vert S\Bigr\rangle=E_s^0 +\frac{\hbar^2 k^2}{2m_0} 
+\end{equation}
+
+\begin{align*}
+\mathcal{H}_{13}=\Bigl\langle u_1\Bigl\vert H \Bigr\vert u_3\Bigr\rangle  &=\Bigl\langle S\Bigl\downarrow \Bigl\vert \mathcal{H}_0+\frac{\hbar^2 k^2}{2m_0} +\frac{\hbar}{m}\mathbf{kp}+\frac{\hbar}{4m_0^2c^2}\sigma\cdot\nabla V\times p \Bigr\vert Z\Bigr\downarrow \Bigr\rangle \\
+&=\Bigl\langle S\Bigl\downarrow \Bigl\vert \mathcal{H}_0+\frac{\hbar^2 k^2}{2m_0}\Bigr\vert Z\Bigr\downarrow\Bigr\rangle + \Bigl\langle S\Bigl\downarrow\frac{\hbar}{m}\mathbf{kp}\Bigr\vert Z\Bigr\downarrow\Bigr\rangle + \Bigl\langle S\Bigl\downarrow\Bigl\vert \frac{\hbar}{4m_0^2c^2}\sigma\cdot\nabla V\times \mathbf{p} \Bigr\vert Z\Bigr\downarrow\Bigr\rangle\\
+&=0 -\frac{\hbar}{m_0}\mathbf{k}_z\Bigl\langle S\Bigl\vert\mathbf{p}_z\Bigr\vert Z\Bigr\rangle + 0=-\mathbf{k}\mathbf{P}
+\end{align*}
+ở đây ta đã định nghĩa $\mathbf{P}=-\frac{\hbar}{m_0}\langle S|\mathbf{p}_z|Z\rangle$
+\begin{align*}
+\mathcal{H}_{22}=\Bigl\langle u_2\Bigl\vert H \Bigr\vert u_2\Bigr\rangle &=\frac{1}{\sqrt{2}}\Bigl\langle (X+iY)\Bigl\uparrow\Bigl\vert \mathcal{H}_0+\frac{\hbar^2 k^2}{2m_0} +\frac{\hbar}{m}\mathbf{kp}+\frac{\hbar}{4m_0^2c^2}\sigma\cdot\nabla V\times p \Bigr\vert(X-iY)\Bigr\uparrow\Bigr\rangle \frac{1}{\sqrt{2}}  \\
+&=E_p^0 +\frac{\hbar^2 k^2}{2m_0}- \frac{\Delta}{3}
+\end{align*}
+ở đây ta định nghĩa $\Delta=\frac{3i\hbar}{4m_0^2c^2}\langle X|(\nabla V\times p)_z|Y\rangle$, các hệ số còn lại ta tính tương tự, sau khi tính toán song ta có một ma trận sau:
+\begin{equation}
+\mathcal{H}_{88}=\begin{bmatrix}
+\overline{H} &0 \\
+0 & \overline{H}
+\end{bmatrix} \text{với} \qquad \overline{H}
+\end{equation}
+\begin{equation}
+\overline{H}=
+\begin{bmatrix}
+E_s^0  &0 &\mathbf{kP}  &0 \\
+0& E_p^0 -\frac{\Delta}{3} &\sqrt{2}\frac{\Delta}{3} &0 \\
+\mathbf{kP} &\sqrt{2}\frac{\Delta}{3} &E_p^0 &0 \\
+0 &0 &0 &E_p^0+\frac{\Delta}{3} 
+\end{bmatrix}
+\end{equation}
+ta định nghĩa $E_s^0=E_g;E_p^0=-\frac{\Delta}{3}$,phương trình $(3.59)$ trở thành như sau:
+\begin{equation}
+\overline{H}=
+\begin{bmatrix}
+E_g  &0 &\mathbf{kP}  &0 \\
+0 &-2\frac{\Delta}{3} &\sqrt{2}\frac{\Delta}{3} &0 \\
+\mathbf{kP} &\sqrt{2}\frac{\Delta}{3} &-\frac{\Delta}{3} &0 \\
+0 &0 &0 &0 
+\end{bmatrix}
+\end{equation}
+ta tính định thức sau $det|\overline{H}-E'I|=0$,ở đây $E'=E+\frac{\hbar^2 k^2}{2m_0}$ đó cũng là lý do ta không thấy hệ số này ở trên ma trận, giải định thức trên cho ta 4 trị riêng năng lượng:
+\begin{enumerate}
+\item \begin{equation}
+E'=0 \qquad \text{(năng lượng $E_g$ là bằng 0)}
+\end{equation}
+\item \begin{equation}
+E'(E'-E_g)(E'+\Delta) -k^2P^2(E'+2\Delta /3) =0
+\end{equation}
+phương trình trên ta xét, trường hợp $k=0 \Longrightarrow $ có 3 dãy,$E'=0,E'=E_g$ và $E'=-\Delta$, và ta xét trường hợp $k\approx0$ tức $\epsilon(k) \ll \Delta,E_g$
+\begin{itemize}
+\item[(i)] với $E'=E_g + \epsilon(k^2)$ thay vào phương trình $(3.62)$ ta có:
+\begin{equation}
+\epsilon(k) \simeq \frac{k^2P^2(E_g+2\Delta /3)}{E_g(E_s+\Delta)}
+\end{equation}
+\item[(ii)] với $E'=0+\epsilon(k^2)$ thay vào phương trình $(3.62)$ ta có:
+\begin{equation}
+\epsilon(k) \simeq \frac{-2k^2P^2}{3E_g}
+\end{equation}
+\item[(iii)] với $E'=-\Delta+\epsilon(k^2)$ thay vào phương trình $(3.62)$ ta có:
+\begin{equation}
+\epsilon(k) \simeq \frac{-k^2P^2}{3(E_g+\Delta)}
+\end{equation}
+
+\end{itemize}
+\end{enumerate}
+Vì $E'=E+\frac{\hbar^2 k^2}{2m_0}$ nên ta thây nó vào các phương trình $(3.63),(3.65)-(3.67)$ ta có:
+\begin{align}
+(3.63)&\qquad n=c \Longrightarrow E_c(\mathbf{k})=E_s^0 +\frac{\hbar^2 k^2}{2m_0}+ \frac{k^2P^2(E_g+2\Delta /3)}{E_g(E_s+\Delta)}\\
+(3.61)&\qquad n=hh \Longrightarrow E_{hh}(\mathbf{k})=\frac{\hbar^2 k^2}{2m_0}\\
+(3.64)&\qquad n=lh \Longrightarrow E_{lh}(\mathbf{k})=\frac{\hbar^2 k^2}{2m_0}-\frac{k^2P^2}{3E_g}\\
+(3.65)&\qquad n=so \Longrightarrow E_{so}(\mathbf{k})=-\Delta +\frac{\hbar^2 k^2}{2m_0}-\frac{k^2P^2}{3(E_g+\Delta)}
+\end{align}
+Chú ý rằng kết quả trên đây là không đầy đủ cho lắm, vì các hiệu ứng ở các band ở trên ta chưa tính vào, ta sẽ thảo luận nó trong phần \emph{mô hình Kane mở rộng và lý thuyết nhiễu loạn L$\ddot{o}$win} và phần năng lượng ở \emph{heavy-hole} là sai ta sẽ sửa lại ở phần sau, do đó ta cần phải chọn hàm cơ sở sao cho khi tính toán năng lượng ở lỗ trống nhẹ có kết quả là âm, vì vậy ta cần phải chọn hàm sóng (riêng) lại, do đó từ phương trình $(3.60)$ ta có thể chọn hàm riêng như sau cho ma trận $4\times 4$ của thành phần thứ nhất trong $(3.62)$:
+\begin{align*}
+&\phi_{hh,\alpha}=\left |-\left(\frac{X+iY}{\sqrt{2}}\right)\Bigl\uparrow\right\rangle \qquad \qquad\text{hh band}\\
+&\phi_{n,\alpha}=a_n\left | S\Bigl\downarrow\right\rangle +b_n\left |\left(\frac{X-iY}{\sqrt{2}}\right)\Bigl\uparrow\right\rangle +c_n\left |Z\Bigl\downarrow\right\rangle \qquad \text{n=c,lh,so}
+\end{align*}
+và thành phần thứ 2 ma trận $4\times4$ trong phương trình $(3.62)$
+\begin{align*}
+&\phi_{hh,\alpha}=\left |\left(\frac{X-iY}{\sqrt{2}}\right)\Bigl\downarrow\right\rangle \qquad \qquad\text{hh band}\\
+&\phi_{n,\alpha}=a_n\left |S\Bigl\uparrow\right\rangle +b_n\left |-\left(\frac{X+iY}{\sqrt{2}}\right)\Bigl\downarrow\right\rangle +c_n\left |Z\Bigl\uparrow\right\rangle \qquad \text{n=c,lh,so}
+\end{align*}
+do đó ta tìm  trị riên năng lượng và chuẩn hóa lại trị véctơ của phương trình $(3.64):$
+\begin{equation}
+\begin{bmatrix}
+E_g -E_n' &0 &\mathbf{kP}  \\
+0 &\frac{-2\Delta}{3}-E_n' &\frac{\sqrt{2}\Delta}{3} \\
+\mathbf{kP} &\sqrt{2}\frac{\Delta}{3} &-\frac{\Delta}{3}-E_n' \\
+\end{bmatrix}
+\begin{bmatrix}
+a_n \\b_n \\c_n
+\end{bmatrix}
+=0
+\end{equation}
+sau khi giải phương trình trên ta tìm được trị riêng của năng lượng, sau đó ta chuẩn hóa trị riêng của véctơ ta có [9,23], $(a_n^2+b_n^2 +c_n^2)^{1/2}=1$, đồng thời xét trường hợp  $k^2\rightarrow 0$:
+\begin{align*}
+n&=c \qquad a_n\approx 1 \qquad b_n\approx 0, \qquad c_n\approx 0 \\
+n&=lh \qquad a_n\approx 0 \qquad b_n = \frac{1}{\sqrt{3}}, \qquad c_n = \sqrt{\frac{2}{3}} \\
+n&=c \qquad a_n\approx 0 \qquad b_n =  \sqrt{\frac{2}{3}}, \qquad c_n = -\frac{1}{3} 
+\end{align*}
+thây các hệ số này vào các hàm riêng ở phương trình trên ta có hàm riêng ta mong muốn, thật ra nếu ta áp dụng lý thuyết về gốc mômen động lượng(Theory of angular momentum) [9] ta cũng có kết quả tương tự:
+\begin{align*}
+&\left |\frac{3}{2},\frac{3}{2}\right\rangle =\left |1,\frac{1}{2};1,+\right\rangle \\
+&\left |\frac{3}{2},\frac{1}{2}\right\rangle =\sqrt{\frac{2}{3}}\left |1,\frac{1}{2};0,+\right\rangle +\frac{1}{\sqrt{3}}\left |1,\frac{1}{2},1,-\right\rangle \\
+&\left |\frac{3}{2},-\frac{1}{2}\right\rangle = \frac{1}{3}\left |1,\frac{1}{2};-1,+\right\rangle +\sqrt{\frac{2}{3}}\left |1,\frac{1}{2},0,- \right\rangle \\
+&\left |\frac{3}{2},-\frac{3}{2}\right\rangle = \left |1,\frac{1}{2};-1,-\right\rangle
+ \end{align*}
+ và:
+ \begin{align*}
+&\left |\frac{1}{2},\frac{1}{2}\right\rangle = \sqrt{\frac{2}{3}}\left |1,\frac{1}{2};1,-\right\rangle -\frac{1}{\sqrt{3}}\left |1,\frac{1}{2},0,+\right\rangle \\
+&\left |\frac{1}{2},-\frac{1}{2}\right\rangle = \frac{1}{3}\left |1,\frac{1}{2};0,-\right\rangle -\sqrt{\frac{2}{3}}\left |1,\frac{1}{2},-1,+\right\rangle 
+\end{align*}  
+\subsubsection{Tóm tắt kết quả mô hình kp 4 vùng như sau:}
+Tôi tóm tắt kết quả ở dưới đây: 
+\begin{enumerate}
+\item vùng dẫn
+\begin{align*}
+E_c(\mathbf{k})&=E_s^0 +\frac{\hbar^2 k^2}{2m_0}+ \frac{k^2P^2(E_g+2\Delta /3)}{E_g(E_s+\Delta)}\left(\equiv   E_g+\frac{\hbar^2 k^2}{2m_e^*}\right)\\
+\phi_{c\alpha}&=\left |S\Bigl\uparrow \right\rangle \\
+\phi_{c\beta}&=\left |S\Bigl\downarrow \right\rangle
+\end{align*}
+\item vùng hóa trị
+\begin{itemize}
+\item[a/]  Heavy hole
+\begin{align*}
+E_{hh}(\mathbf{k})&=\frac{\hbar^2 k^2}{2m_0}\left(\text{cần có dạng } \qquad  -\frac{\hbar^2 k^2}{2m_{hh}^*}\right)\\
+\phi_{hh,\alpha}&=\frac{-1}{\sqrt{2}} \left |(X+iY)\Bigl\uparrow \right\rangle \equiv \left |\frac{3}{2},\frac{-3}{2}\right\rangle \\
+\phi_{hh,\beta}&=\frac{1}{\sqrt{2}}\left |(X-iY)\Bigl\downarrow \right\rangle \equiv \left |\frac{3}{2},\frac{3}{2}\right\rangle 
+\end{align*}
+\item[b/] light hole
+\begin{align*}
+E_{lh}(\mathbf{k})&=\frac{\hbar^2 k^2}{2m_0}-\frac{2k^2P^2}{3E_g}\left(\equiv -\frac{\hbar^2 k^2}{2m_{lh}^*}\right)\\
+\phi_{lh,\alpha}&=\frac{-1}{\sqrt{2}} \left |(X+iY)\Bigl\uparrow\right\rangle
+\equiv \left |\frac{3}{2},\frac{-3}{2}\right\rangle \\
+\phi_{lh,\beta}&=\frac{1}{\sqrt{2}}\left |(X-iY)\Bigl\downarrow\right(\rangle 
+\equiv \left |\frac{3}{2},\frac{3}{2}\right\rangle 
+\end{align*}
+\end{itemize}
+\end{enumerate}
+
+\newpage
